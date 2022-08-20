@@ -1,0 +1,5 @@
+simulator lang=spectre
+VDD (vdd 0) vsource dc=1.2
+GND (vss 0) vsource dc=0
+V0 (in0 0) vsource dc=1.2
+V1 (in1 0) vsource type=pulse val0=0 val1=1.2 delay=0 rise=0.05n fall=0.05n width=10n period=20n
