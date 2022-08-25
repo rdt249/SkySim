@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Aug 19 18:06:38 2022
+// Design library name: MAINLIB_TESTING
+// Design cell name: SL_nand2
+// Design view name: schematic
+simulator lang=spectre
+global 0

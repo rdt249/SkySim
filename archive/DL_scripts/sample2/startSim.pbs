@@ -1,0 +1,72 @@
+#!/bin/bash
+
+#PBS -M anitha.balasubramanian@vanderbilt.edu
+#PBS -m a
+#PBS -l mem=600mb
+#PBS -l nodes=1:ppn=1:x86
+#PBS -l walltime=300:00
+#PBS -l cput=300:00
+#PBS -o /home/loveletd/20080331_GETTRANSIENT/log/pbs_output.log
+#PBS -j oe
+
+count=1
+startNum=1
+HOMEPATH="/home/loveletd/20080331_GETTRANSIENT"
+tmpSring="fileCmp.tmp"
+HITTYPE="n"
+
+################################################################################
+# Create Binary Input Arrays X and Y: Loop through all combinations of X and Y #
+################################################################################
+
+for X3 in 0 1; do
+for X2 in 0 1; do
+for X1 in 0 1; do
+for X0 in 0 1; do
+for Y3 in 0 1; do
+for Y2 in 0 1; do
+for Y1 in 0 1; do
+for Y0 in 0 1; do
+
+echo "X=$X3$X2$X1$X0 and Y=$Y3$Y2$Y1$Y0"; echo;
+
+#################################################################################                         Loop through all NODES                               #
+################################################################################
+
+#for ((NODE=2; NODE<204; NODE+=1))
+for ((NODE=194; NODE<204; NODE+=1))
+do
+     #if the current value is greater than or equal to the start number
+     if [ $count -ge $startNum ]
+     then
+          #if file exists then remove it
+          #if [ -e $HOMEPATH/filesCmp.tmp ]
+          #then
+          #     rm $HOMEPATH/filesCmp.tmp
+          #fi
+
+          #list the filenames of the completed sims in filesCmp.tmp
+          #ls $HOMEPATH/sim_data > $HOMEPATH/filesCmp.tmp
+          #tmpComplete=$(wc -l $HOMEPATH/filesCmp.tmp)
+
+          #grab number of files (mod out filename)
+          #runsComplete=${tmpComplete%$HOMEPATH/filesCmp.tmp}
+
+          #echo "Last completed run: $runsComplete"
+          #echo $count
+
+          #if current count is greater than the number already completed
+          #in other words: dont rerun a sim thats already been completed
+          #if [ $count -gt $runsComplete ]
+          #then
+               tmpFile="$HOMEPATH/sim_data/nAdder-$HITTYPE"
+               tmpFile2="$tmpFile$NODE-X$X3$X2$X1$X0-Y$Y3$Y2$Y1$Y0"
+               tmpFile3="$tmpFile2.data"
+               echo "running $tmpFile3"; echo;
+               cat $HOMEPATH/simulate.sh | sed s/%X3%/$X3/g | sed s/%X2%/$X2/g | sed s/%X1%/$X1/g | sed s/%X0%/$X0/g | sed s/%Y3%/$Y3/g | sed s/%Y2%/$Y2/g | sed s/%Y1%/$Y1/g | sed s/%Y0%/$Y0/g | sed s/%NODE%/$NODE/g | bash
+#sed s/%HOMEPATH%/$HOMEPATH/g | bash
+          #fi
+     fi
+     count=$((count+1))     
+done
+done; done; done; done; done; done; done; done 

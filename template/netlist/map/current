@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "SL_nand2"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  hierDelim "."
+  netlistDir "/home/lawrence/simulation/MAINLIB_TESTING/SL_nand2/adexl/results/data/.tmpADEDir_lawrence/MAINLIB_TESTING:SL_nand2:1/MAINLIB_TESTING_SL_nand2_schematic_spectre/netlist"
+ )
+( model
+( "MAINLIB_TESTING/SL_nand2/schematic" "SL_nand2" )
+ )
+( "SL_nand2" "ihnl/cds0/map" )
+ )

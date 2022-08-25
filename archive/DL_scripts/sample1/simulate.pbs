@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#PBS -M daniel.loveless@vanderbilt.edu
+#PBS -m a
+#PBS -l mem=600mb
+#PBS -l nodes=1:ppn=1:x86
+#PBS -l walltime=20:00
+#PBS -l cput=20:00
+#PBS -o pbs_output%NODE%.log
+#PBS -j oe
+
+# Commands go here
+cd /home/loveletd/20060808_DPLL_scaling_study
+NODE=%NODE%
+cat hit_one_node.sh | sed  s/%NODE_PBS%/$NODE/g > $NODE.sh
+bash $NODE.sh

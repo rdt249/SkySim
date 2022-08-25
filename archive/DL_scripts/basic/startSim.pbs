@@ -1,0 +1,97 @@
+#!/bin/bash
+
+#PBS -M daniel.loveless@vanderbilt.edu
+#PBS -m a
+#PBS -l mem=600mb
+#PBS -l nodes=1:ppn=1:x86
+#PBS -l walltime=500:00
+#PBS -l cput=500:00
+#PBS -o log/pbs_output.log
+#PBS -j oe
+
+sleeptime=10
+runNum=150
+startNum=1
+count=1
+tmpString="filesCmp.tmp"
+countFlag=1
+eCount=0
+
+for INDC in 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 1.1 1.2
+do
+for NODE in `cat /home/loveletd/20080108_VCO_TMR/5stage.nnodes`
+do
+for TIME in 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+do
+for LET in 10 20 80
+do
+     #if the current value is
+     #if [ $count -ge $startNum ]
+     #then
+          #if [ -e filesCmp.tmp ]
+          #then
+          #     rm /home/loveletd/20080108_VCO_TMR/filesCmp.tmp
+          #fi
+          #ls /home/loveletd/20080108_VCO_TMR/phase_sweep_data_complete > filesCmp.tmp
+          #tmpComplete=$(wc -l filesCmp.tmp)
+          #runsComplete=${tmpComplete%$tmpString}
+          #echo "Last completed run: $runsComplete"
+     #	  echo "Current count: $count"
+	  #echo "Current eCount: $eCount"
+     #     if [ $count -gt $runsComplete ]
+     #     then
+     #          diff=$((count-$runsComplete))
+     #          if [ $diff -le $runNum ]
+     #          then
+                    tmpFile="/home/loveletd/20080108_VCO_TMR/phase_sweep_data_rerun/data_vco_B_5stage_1_75-GHz_N_"
+		    tmpFile2=$tmpFile$NODE"-LET"$LET"-"$INDC"-V_"$TIME"-per.phase"
+                    #echo $tmpFile2
+
+                    ############################################################
+                    #                      Error Checking                      #
+                    ############################################################
+
+		    if [ -a $tmpFile2 ]
+		    then
+                         #echo "no run"
+                         eCount=$((eCount+1))
+                         echo "Rerun: $tmpFile2, count:$eCount"
+                         
+                    #else
+                         countFlag=1
+                         #echo $diff
+                         #####echo "running $NODE-$INDC-V-LET$LET-$TIME-per ... #: $count"
+                         cat /home/loveletd/20080108_VCO_TMR/simulateN.sh | sed s/%LET%/$LET/g | sed s/%TIME%/$TIME/g | sed s/%NODE%/$NODE/g | sed s/%INDC%/$INDC/g | bash
+                         #echo "eCount: $eCount"
+		     	 #####eCount=$((eCount+1))
+		    fi
+
+                    #if [ $tmp -eq 0 ]
+                    #then
+                    #     sleep $sleeptime
+                    #fi
+     #          else
+     #               countFlag=0
+                    #echo $count
+     #               echo "no run - wait for $sleeptime sec ... #: $count"
+                    #tmp=$((count % runNum))
+                    #if [ $tmp -eq 0 ]
+                    #then
+     #                    sleep $sleeptime
+                    #fi
+     #          fi
+     #     fi
+     #     if [ $countFlag -eq 1 ]
+     #     then
+     #          count=$((count+1))
+	       #eCount=$((eCount+1))
+     #     fi
+     #else
+     #     count=$((count+1))
+     #     echo $count
+     #fi
+     count=$((count+1))
+done
+done
+done
+done 

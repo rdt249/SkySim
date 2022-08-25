@@ -1,0 +1,463 @@
+// Generated for: spectre
+// Generated on: Dec 13 14:36:16 2006
+// Design library name: DPLL_500M_IBM_0.13_REDO
+// Design cell name: DPLL_500M_VoltagePump_sim_noinputVCO
+// Design view name: schematic
+simulator lang=spectre
+global 0 vss! vdd!
+include "/gpfs0/local/x86/cadence/IBM_PDK/cmrf8sf/rel/Spectre/models/allModels.scs"
+//include "/gpfs0/local/x86/cadence/IBM_PDK/cmrf8sf/V1.3.0.2LM/Spectre/models/allModels.scs"
+
+// Library name: VCO_work_IBM_0.13_REDO
+// Cell name: VCO_stage
+// View name: schematic
+subckt VCO_stage in n_in out p_in
+    I2 (0 vss!) subc l=4u w=2u dtemp=0
+    T34 (out in net8 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T36 (net8 n_in 0 vss!) nfet l=120.0n w=320.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.76e-13 as=1.76e-13 pd=1.74u ps=1.74u nrd=0.5625 nrs=0.5625 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T47 (net10 p_in vdd! vdd!) pfet l=120.0n w=1.11u nf=1 m=1 par=1 \
+        ngcon=1 ad=6.105e-13 as=6.105e-13 pd=3.32u ps=3.32u nrd=0.1622 \
+        nrs=0.1622 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T31 (out in net10 vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends VCO_stage
+// End of subcircuit definition.
+
+// Library name: VCO_work_IBM_0.13_REDO
+// Cell name: VCO_input_stage
+// View name: schematic
+subckt VCO_input_stage in out
+    I2 (0 vss!) subc l=4u w=2u dtemp=0
+    T59 (out out vdd! vdd!) pfet l=120.0n w=1.11u nf=1 m=1 par=1 ngcon=1 \
+        ad=6.105e-13 as=6.105e-13 pd=3.32u ps=3.32u nrd=0.1622 nrs=0.1622 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T58 (out in 0 vss!) nfet l=120.0n w=320.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.76e-13 as=1.76e-13 pd=1.74u ps=1.74u nrd=0.5625 nrs=0.5625 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends VCO_input_stage
+// End of subcircuit definition.
+
+// Library name: VCO_work_IBM_0.13_REDO
+// Cell name: VCO_500M
+// View name: schematic
+subckt VCO_500M n_bias o11
+    I30 (o9 n_bias o10 p_bias) VCO_stage
+    I23 (o2 n_bias o3 p_bias) VCO_stage
+    I24 (o3 n_bias o4 p_bias) VCO_stage
+    I33 (o10 n_bias o11 p_bias) VCO_stage
+    I22 (o1 n_bias o2 p_bias) VCO_stage
+    I25 (o4 n_bias o5 p_bias) VCO_stage
+    I26 (o5 n_bias o6 p_bias) VCO_stage
+    I27 (o6 n_bias o7 p_bias) VCO_stage
+    I2 (o11 n_bias o1 p_bias) VCO_stage
+    I29 (o8 n_bias o9 p_bias) VCO_stage
+    I28 (o7 n_bias o8 p_bias) VCO_stage
+    I18 (n_bias p_bias) VCO_input_stage
+ends VCO_500M
+// End of subcircuit definition.
+
+// Library name: LPF
+// Cell name: V_LPF_generic
+// View name: schematic
+subckt V_LPF_generic lpf_in lpf_out
+    R1 (0 net11) resistor r=2.4K
+    R0 (lpf_in lpf_out) resistor r=125K
+    C2 (lpf_out net11) capacitor c=2.14p
+    C3 (lpf_out 0) capacitor c=210f
+    I0 (0 vss!) subc l=4u w=2u dtemp=0
+ends V_LPF_generic
+// End of subcircuit definition.
+
+// Library name: ChPump_work_IBM_0.13_REDO
+// Cell name: p_switch_final
+// View name: schematic
+subckt p_switch_final SW0 SW1 in
+    T10 (i3 i2 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T9 (i4 t1 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T6 (i2 i1 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T4 (SW0 i4 SW1 vss!) nfet l=240.0n w=1.6u nf=1 m=1 par=1 ngcon=1 \
+        ad=8.8e-13 as=8.8e-13 pd=4.3u ps=4.3u nrd=0.1375 nrs=0.1375 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T2 (t1 vdd! i1 vss!) nfet l=120.0n w=1.28u nf=1 m=1 par=1 ngcon=1 \
+        ad=7.04e-13 as=7.04e-13 pd=3.66u ps=3.66u nrd=0.1406 nrs=0.1406 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (i1 in 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T11 (i3 i2 vdd! vdd!) pfet l=120.0n w=980.0n nf=1.0 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T8 (i4 t1 vdd! vdd!) pfet l=120.0n w=980.0n nf=1.0 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T7 (i2 i1 vdd! vdd!) pfet l=120.0n w=980.0n nf=1.0 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T5 (SW0 i3 SW1 vdd!) pfet l=240.0n w=5.6u nf=1 m=1 par=1 ngcon=1 \
+        ad=3.08e-12 as=3.08e-12 pd=12.3u ps=12.3u nrd=0.0393 nrs=0.0393 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T1 (i1 in vdd! vdd!) pfet l=120.0n w=980.0n nf=1.0 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T3 (t1 0 i1 vdd!) pfet l=120.0n w=4.48u nf=1 m=1 par=1 ngcon=1 \
+        ad=2.464e-12 as=2.464e-12 pd=10.06u ps=10.06u nrd=0.0402 \
+        nrs=0.0402 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    I0 (0 vss!) subc l=4u w=2u dtemp=0
+ends p_switch_final
+// End of subcircuit definition.
+
+// Library name: V_ChPump_work_IBM_0.13
+// Cell name: V_Ch_pump_final
+// View name: schematic
+subckt V_Ch_pump_final ChDown ChUp Vcap
+    I1 (Vcap 0 ChDown) p_switch_final
+    I0 (vdd! Vcap ChUp) p_switch_final
+ends V_Ch_pump_final
+// End of subcircuit definition.
+
+// Library name: VCO_work_IBM_0.13_REDO
+// Cell name: BufferX6_final
+// View name: schematic
+subckt BufferX6_final in out
+    I3 (0 vss!) subc l=4u w=2u dtemp=0
+    T11 (out net036 0 vss!) nfet l=120.0n w=41.48u nf=68.0 m=1 par=1 \
+        ngcon=1 ad=7.4664e-12 as=7.6433e-12 pd=65.96u ps=67.15u nrd=0.2951 \
+        nrs=0.2951 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T10 (net036 net055 0 vss!) nfet l=120.0n w=15.25u nf=25.0 m=1 par=1 \
+        ngcon=1 ad=2.6962e-12 as=2.9707e-12 pd=24.09u ps=25.6u nrd=0.2951 \
+        nrs=0.2951 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (net4 in 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=2.8e-14 as=1.54e-13 pd=480.0n ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T3 (net8 net4 0 vss!) nfet l=120.0n w=760.0n nf=2.0 m=1 par=1 ngcon=1 \
+        ad=1.368e-13 as=2.47e-13 pd=1.48u ps=2.44u nrd=0.4737 nrs=0.4737 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T7 (net055 net16 0 vss!) nfet l=120.0n w=5.6u nf=10.0 m=1 par=1 \
+        ngcon=1 ad=1.008e-12 as=1.1704e-12 pd=9.2u ps=10.34u nrd=0.3214 \
+        nrs=0.3214 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T4 (net16 net8 0 vss!) nfet l=120.0n w=2.04u nf=4.0 m=1 par=1 ngcon=1 \
+        ad=3.672e-13 as=5.151e-13 pd=3.48u ps=4.57u nrd=0.3529 nrs=0.3529 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T9 (out net036 vdd! vdd!) pfet l=120.0n w=146.000000u nf=100.0 m=1 \
+        par=1 ngcon=1 ad=2.628e-11 as=2.67034e-11 pd=182.000000u \
+        ps=184.04u nrd=0.1233 nrs=0.1233 rf_rsub=1 plnest=-1 plorient=-1 \
+        pld200=-1 pwd100=-1 lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p \
+        panw2=0p panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p \
+        panw9=0p panw10=0p sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T8 (net036 net055 vdd! vdd!) pfet l=120.0n w=53.58u nf=38.0 m=1 par=1 \
+        ngcon=1 ad=9.6444e-12 as=1.00533e-11 pd=67.26u ps=69.25u \
+        nrd=0.1277 nrs=0.1277 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 \
+        pwd100=-1 lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p \
+        panw3=0p panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p \
+        panw10=0p sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T1 (net4 in vdd! vdd!) pfet l=120.0n w=980.0n nf=2.0 m=1 par=1 ngcon=1 \
+        ad=1.764e-13 as=3.185e-13 pd=1.7u ps=2.77u nrd=0.3673 nrs=0.3673 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T6 (net055 net16 vdd! vdd!) pfet l=120.0n w=19.6u nf=14.0 m=1 par=1 \
+        ngcon=1 ad=3.528e-12 as=3.934e-12 pd=24.64u ps=26.62u nrd=0.1286 \
+        nrs=0.1286 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T5 (net16 net8 vdd! vdd!) pfet l=120.0n w=7.2u nf=4.0 m=1 par=1 \
+        ngcon=1 ad=1.296e-12 as=1.818e-12 pd=8.64u ps=11.02u nrd=0.1 \
+        nrs=0.1 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T2 (net8 net4 vdd! vdd!) pfet l=120.0n w=2.67u nf=3.0 m=1 par=1 \
+        ngcon=1 ad=4.094e-13 as=8.099e-13 pd=3.59u ps=5.38u nrd=0.2022 \
+        nrs=0.2022 rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 \
+        lstis=1 lnws=0 rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p \
+        panw4=0p panw5=0p panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p \
+        sa=5.5e-07 sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends BufferX6_final
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: Nor2_X1
+// View name: schematic
+subckt Nor2_X1 A B out
+    I3 (0 vss!) subc l=4u w=2u dtemp=0
+    T3 (net7 A vdd! vdd!) pfet l=120.0n w=1.96u nf=1 m=1 par=1 ngcon=1 \
+        ad=1.078e-12 as=1.078e-12 pd=5.02u ps=5.02u nrd=0.0918 nrs=0.0918 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T2 (out B net7 vdd!) pfet l=120.0n w=1.96u nf=1 m=1 par=1 ngcon=1 \
+        ad=1.078e-12 as=1.078e-12 pd=5.02u ps=5.02u nrd=0.0918 nrs=0.0918 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T1 (out B 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (out A 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends Nor2_X1
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: Nand3_X1
+// View name: schematic
+subckt Nand3_X1 A B C out
+    I3 (0 vss!) subc l=4u w=2u dtemp=0
+    T4 (out C vdd! vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T3 (out A vdd! vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T2 (out B vdd! vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T5 (net039 C 0 vss!) nfet l=120.0n w=840.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=4.62e-13 as=4.62e-13 pd=2.78u ps=2.78u nrd=0.2143 nrs=0.2143 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T1 (net15 B net039 vss!) nfet l=120.0n w=840.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=4.62e-13 as=4.62e-13 pd=2.78u ps=2.78u nrd=0.2143 nrs=0.2143 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (out A net15 vss!) nfet l=120.0n w=840.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=4.62e-13 as=4.62e-13 pd=2.78u ps=2.78u nrd=0.2143 nrs=0.2143 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends Nand3_X1
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: Nand2_X1
+// View name: schematic
+subckt Nand2_X1 A B out
+    I2 (0 vss!) subc l=4u w=2u dtemp=0
+    T3 (out A vdd! vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T2 (out B vdd! vdd!) pfet l=120.0n w=980.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T1 (net15 B 0 vss!) nfet l=120.0n w=560.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=3.08e-13 as=3.08e-13 pd=2.22u ps=2.22u nrd=0.3214 nrs=0.3214 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (out A net15 vss!) nfet l=120.0n w=560.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=3.08e-13 as=3.08e-13 pd=2.22u ps=2.22u nrd=0.3214 nrs=0.3214 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends Nand2_X1
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: Inv_X1
+// View name: schematic
+subckt Inv_X1 in out
+    I0 (0 vss!) subc l=4u w=2u dtemp=0
+    T1 (out in vdd! vdd!) pfet l=120.0n w=980.0n nf=1.0 m=1 par=1 ngcon=1 \
+        ad=5.39e-13 as=5.39e-13 pd=3.06u ps=3.06u nrd=0.1837 nrs=0.1837 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (out in 0 vss!) nfet l=120.0n w=280.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=1.54e-13 as=1.54e-13 pd=1.66u ps=1.66u nrd=0.6429 nrs=0.6429 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends Inv_X1
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: Inv_X3
+// View name: schematic
+subckt Inv_X3 in out
+    I2 (0 vss!) subc l=4u w=2u dtemp=0
+    T1 (out in vdd! vdd!) pfet l=120.0n w=2.94u nf=1 m=1 par=1 ngcon=1 \
+        ad=1.617e-12 as=1.617e-12 pd=6.98u ps=6.98u nrd=0.0612 nrs=0.0612 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+    T0 (out in 0 vss!) nfet l=120.0n w=840.0n nf=1 m=1 par=1 ngcon=1 \
+        ad=4.62e-13 as=4.62e-13 pd=2.78u ps=2.78u nrd=0.2143 nrs=0.2143 \
+        rf_rsub=1 plnest=-1 plorient=-1 pld200=-1 pwd100=-1 lstis=1 lnws=0 \
+        rgatemod=0 rbodymod=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p sa=5.5e-07 \
+        sb=5.5e-07 sd=3.6e-07 dtemp=0
+ends Inv_X3
+// End of subcircuit definition.
+
+// Library name: PFD_IBM_0.13_REDO
+// Cell name: PDF_BuffX3
+// View name: schematic
+subckt PDF_BuffX3 Data Dclock Down Up
+    I23 (net028 net096 net050) Nor2_X1
+    I14 (net0121 net089 net5 net079) Nand3_X1
+    I12 (net22 net14 net5 net9) Nand3_X1
+    I18 (net079 net0136 net084) Nand2_X1
+    I15 (net089 net084 net096) Nand2_X1
+    I16 (net089 net5 net085) Nand2_X1
+    I17 (net084 net085 net089) Nand2_X1
+    I11 (net14 net5 net20) Nand2_X1
+    I10 (net11 net20 net14) Nand2_X1
+    I9 (net9 net49 net11) Nand2_X1
+    I13 (net14 net11 net028) Nand2_X1
+    I24 (net050 net5) Inv_X1
+    I20 (net084 net0117) Inv_X1
+    I19 (net0117 net0121) Inv_X1
+    I5 (net26 net22) Inv_X1
+    I4 (net11 net26) Inv_X1
+    I22 (Dclock net0136) Inv_X3
+    I21 (net079 Down) Inv_X3
+    I2 (net9 Up) Inv_X3
+    I0 (Data net49) Inv_X3
+ends PDF_BuffX3
+// End of subcircuit definition.
+
+// Library name: DPLL_500M_IBM_0.13_REDO
+// Cell name: DPLL_500M_VoltagePump_sim_noinputVCO
+// View name: schematic
+I0 (%NODE% 0) isource \
+        file="~/20060501_130nm_IonStrikeCurves/nmos_130nm/nmoslet80.txt" \
+        type=pwl delay=200n
+I20 (v_in_vco vco_out) VCO_500M
+I26 (v_lpf v_in_vco) V_LPF_generic
+V0 (clk_in 0) vsource type=pulse val0=0.0 val1=1.2 period=1.5n delay=5n \
+        rise=80p fall=80p width=669.625p
+V1 (vdd! 0) vsource dc=1.2 type=dc
+C0 (pll_buff_out 0) capacitor c=2p
+I13 (net029 net011 v_lpf) V_Ch_pump_final
+I27 (vco_out pll_buff_out) BufferX6_final
+I17 (clk_in vco_out net029 net011) PDF_BuffX3
+ic v_in_vco=.7 v_lpf=0 vco_out=0 
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=25 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 ckptclock=1800 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=500n errpreset=liberal write="spectre.ic" \
+    writefinal="spectre.fc" annotate=status maxiters=5 
+Setting options rawfmt=nutascii
+save pll_buff_out clk_in v_in_vco %NODE% I0:sink
+saveOptions options save=selected
+

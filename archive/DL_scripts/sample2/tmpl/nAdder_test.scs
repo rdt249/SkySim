@@ -1,0 +1,174 @@
+// Generated for: spectre
+// Generated on: Feb  8 14:31:06 2008
+// Design library name: 4bit_Mult_90nm_ani
+// Design cell name: 4bit_mul_nhit_sim
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+parameters Y3=1.2 Y2=0 Y1=0 Y0=1.2 X3=0 X2=0 X1=0 X0=0 vdd=1.2
+include "/usr/local/isde/PDK/IBM_PDK/cmos9sf/relIBM/Spectre/models/fixed_corner.scs"
+include "/usr/local/isde/PDK/IBM_PDK/cmos9sf/relIBM/Spectre/models/design.scs"
+include "/usr/local/isde/PDK/IBM_PDK/cmos9sf/relIBM/Spectre/models/process.scs"
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: Inverter
+// View name: schematic
+subckt Inverter B gnd out d_nab
+    T1 (out B d_nab d_nab) pfet w=480.0n l=80n par=1 m=1 ad=115.2f \
+        as=115.2f pd=1.44u ps=1.44u nf=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T2 (out B gnd gnd) nfet w=160.0n l=80n par=1 m=1 ad=38.4f as=38.4f \
+        pd=800n ps=800n nf=1 ptwell=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+ends Inverter
+// End of subcircuit definition.
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: Nand
+// View name: schematic
+subckt Nand A B d_nab gnd out _net0
+    T4 (out B _net0 _net0) pfet w=480.0n l=80n par=1 m=1 ad=115.2f \
+        as=115.2f pd=1.44u ps=1.44u nf=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T3 (out A _net0 _net0) pfet w=480.0n l=80n par=1 m=1 ad=115.2f \
+        as=115.2f pd=1.44u ps=1.44u nf=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T2 (d_nab B gnd gnd) nfet w=320.0n l=80n par=1 m=1 ad=76.8f as=76.8f \
+        pd=1.12u ps=1.12u nf=1 ptwell=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T1 (out A d_nab gnd) nfet w=320.0n l=80n par=1 m=1 ad=76.8f as=76.8f \
+        pd=1.12u ps=1.12u nf=1 ptwell=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+ends Nand
+// End of subcircuit definition.
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: Full_adder
+// View name: schematic
+subckt Full_adder A B Cin Cout S gnd _net0 x0 x1 x10 x11 x12 x13 x14 x15 \
+        x2 x3 x4 x5 x6 x7 x8 x9
+    I16 (x8 Cin x13 gnd x12 _net0) Nand
+    I15 (x6 x8 x11 gnd x10 _net0) Nand
+    I14 (x6 Cin x9 gnd x8 _net0) Nand
+    I13 (x0 x8 x15 gnd Cout _net0) Nand
+    I12 (x2 x4 x7 gnd x6 _net0) Nand
+    I17 (x10 x12 x14 gnd S _net0) Nand
+    I11 (x0 B x5 gnd x4 _net0) Nand
+    I10 (A B x1 gnd x0 _net0) Nand
+    I9 (A x0 x3 gnd x2 _net0) Nand
+ends Full_adder
+// End of subcircuit definition.
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: Nor
+// View name: schematic
+subckt Nor A B d_pab gnd out _net0
+    T1 (out B d_pab _net0) pfet w=960.0n l=80n par=1 m=1 ad=230.4f \
+        as=230.4f pd=2.4u ps=2.4u nf=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T3 (d_pab A _net0 _net0) pfet w=960.0n l=80n par=1 m=1 ad=230.4f \
+        as=230.4f pd=2.4u ps=2.4u nf=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T0 (out A gnd gnd) nfet w=160.0n l=80n par=1 m=1 ad=38.4f as=38.4f \
+        pd=800n ps=800n nf=1 ptwell=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+    T2 (out B gnd gnd) nfet w=160.0n l=80n par=1 m=1 ad=38.4f as=38.4f \
+        pd=800n ps=800n nf=1 ptwell=1 dtemp=0.0 rgatemod=0 sa=240.0n \
+        sb=240.0n sd=0 panw1=0p panw2=0p panw3=0p panw4=0p panw5=0p \
+        panw6=0p panw7=0p panw8=0p panw9=0p panw10=0p
+ends Nor
+// End of subcircuit definition.
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: Half_adder
+// View name: schematic
+subckt Half_adder A B Cout S gnd _net0 x0 x1 x2 x3 x4 x5 x6 x7 x8
+    I18 (x7 gnd Cout _net0) Inverter
+    I13 (A B x8 gnd x7 _net0) Nand
+    I12 (x2 x4 x6 gnd S _net0) Nand
+    I11 (x0 B x5 gnd x4 _net0) Nand
+    I10 (A B x1 gnd x0 _net0) Nand
+    I9 (A x0 x3 gnd x2 _net0) Nand
+ends Half_adder
+// End of subcircuit definition.
+
+// Library name: 4bit_Mult_90nm_ani
+// Cell name: 4bit_mul_nhit_sim
+// View name: schematic
+//I0 (0 n2) isource \
+//        file="/home/balasua2/currentpulse_profiles/90nm_40let.txt" \
+//       type=pwl
+I142 (y0 0 n4 vdd!) Inverter
+I141 (y1 0 n5 vdd!) Inverter
+I140 (y2 0 n6 vdd!) Inverter
+I139 (y3 0 n7 vdd!) Inverter
+I138 (x3 0 n3 vdd!) Inverter
+I137 (x2 0 n2 vdd!) Inverter
+I136 (x1 0 n1 vdd!) Inverter
+I135 (x0 0 n0 vdd!) Inverter
+I60 (n36 n50 n46 n103 s2 0 vdd! n102 n101 n92 n91 n90 n89 n88 n87 n100 n99 \
+        n98 n97 n96 n95 n94 n93) Full_adder
+I61 (n24 n49 n35 n85 n86 0 vdd! n84 n83 n74 n73 n72 n71 n70 n69 n82 n81 \
+        n80 n79 n78 n77 n76 n75) Full_adder
+I62 (n48 n47 n23 n67 n68 0 vdd! n66 n65 n56 n55 n54 n53 n52 n51 n64 n63 \
+        n62 n61 n60 n59 n58 n57) Full_adder
+I63 (n105 n104 n67 n124 n125 0 vdd! n123 n122 n113 n112 n111 n110 n109 \
+        n108 n121 n120 n119 n118 n117 n116 n115 n114) Full_adder
+I64 (n68 n106 n85 n142 n143 0 vdd! n141 n140 n131 n130 n129 n128 n127 n126 \
+        n139 n138 n137 n136 n135 n134 n133 n132) Full_adder
+I65 (n86 n107 n103 n160 s3 0 vdd! n159 n158 n149 n148 n147 n146 n145 n144 \
+        n157 n156 n155 n154 n153 n152 n151 n150) Full_adder
+I67 (n125 n142 n25 n194 s5 0 vdd! n193 n192 n183 n182 n181 n180 n179 n178 \
+        n191 n190 n189 n188 n187 n186 n185 n184) Full_adder
+I68 (n124 n161 n194 s7 s6 0 vdd! n177 n176 n167 n166 n165 n164 n163 n162 \
+        n175 n174 n173 n172 n171 n170 n169 n168) Full_adder
+I78 (n7 n3 net0526 0 n161 vdd!) Nor
+I77 (n7 n2 net0532 0 n104 vdd!) Nor
+I76 (n6 n3 net0538 0 n105 vdd!) Nor
+I75 (n7 n1 net0544 0 n106 vdd!) Nor
+I74 (n7 n0 net0550 0 n107 vdd!) Nor
+I73 (n6 n2 net0562 0 n47 vdd!) Nor
+I72 (n5 n3 net0556 0 n48 vdd!) Nor
+I71 (n6 n1 net0568 0 n49 vdd!) Nor
+I70 (n6 n0 net0574 0 n50 vdd!) Nor
+I53 (n4 n0 net042 0 s0 vdd!) Nor
+I54 (n4 n1 net036 0 n13 vdd!) Nor
+I55 (n5 n0 net030 0 n12 vdd!) Nor
+I56 (n4 n2 net024 0 n11 vdd!) Nor
+I57 (n5 n1 net018 0 n10 vdd!) Nor
+I58 (n4 n3 net012 0 n9 vdd!) Nor
+I59 (n5 n2 net06 0 n8 vdd!) Nor
+I50 (n13 n12 n46 s1 0 vdd! n45 n44 n43 n42 n41 n40 n39 n38 n37) Half_adder
+I51 (n11 n10 n35 n36 0 vdd! n34 n33 n32 n31 n30 n29 n28 n27 n26) \
+        Half_adder
+I52 (n9 n8 n23 n24 0 vdd! n22 n21 n20 n19 n18 n17 n16 n15 n14) Half_adder
+I69 (n160 n143 n25 s4 0 vdd! n203 n202 n201 n200 n199 n198 n197 n196 n195) \
+        Half_adder
+V4 (x0 0) vsource dc=X0 type=dc
+V11 (y3 0) vsource dc=Y3 type=dc
+V9 (y1 0) vsource dc=Y1 type=dc
+V6 (x2 0) vsource dc=X2 type=dc
+V8 (y0 0) vsource dc=Y0 type=dc
+V5 (x1 0) vsource dc=X1 type=dc
+V7 (x3 0) vsource dc=X3 type=dc
+V3 (vdd! 0) vsource dc=vdd type=dc
+V10 (y2 0) vsource dc=Y2 type=dc
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 ckptclock=1800 \
+    sensfile="../psf/sens.output" checklimitdest=psf 
+tran tran stop=6n write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+
+Settings options rawfmt=nutascii
+save s0 s1 s2 s3 s4 s5 s6 s7
+saveOptions options save=selected

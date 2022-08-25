@@ -1,0 +1,12 @@
+
+// Library name: MAINLIB_TESTING
+// Cell name: SL_nand2
+// View name: schematic
+MN1 (net13 in1 vss vss) nshort l=0.2 w=0.5 ad=0.0975 as=0.0975 pd=1.39 \
+        ps=1.39 nrs=0 nrd=0 m=1 mult=1
+MN0 (out in0 net13 net13) nshort l=0.2 w=0.5 ad=0.0975 as=0.0975 pd=1.39 \
+        ps=1.39 nrs=0 nrd=0 m=1 mult=1
+MP1 (out in1 vdd vdd) pshort l=0.2 w=0.4 ad=0.078 as=0.078 pd=1.19 ps=1.19 \
+        nrs=0 nrd=0 m=1 mult=1
+MP0 (out in0 vdd vdd) pshort l=0.2 w=0.4 ad=0.078 as=0.078 pd=1.19 ps=1.19 \
+        nrs=0 nrd=0 m=1 mult=1

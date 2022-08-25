@@ -1,0 +1,1303 @@
+ahdlcmicompile: Compiling ahdlcmi in nAdder_test.ahdlcmi/ for Linux2.6.18-53.1.13.el5+gcc with optimize using gcc on Wed Apr  9 15:59:01 CDT 2008 [0]
+ahdlcmicompile: Generating makefile
+PATH:  /usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin:/usr/local/isde/cadence//IC5141//tools/dracula/bin:/usr/local/isde/cadence//IC5141//tools/concice/bin:/usr/local/isde/cadence//IC5141//tools/dfII/bin:/usr/local/isde/cadence//IC5141//tools/bin:/usr/local/isde/cadence/IC5141/tools/dfII/bin:/usr/local/isde/cadence/IC5141/tools/bin:/usr/local/isde/cadence/IC5141/share/bin:/usr/scheduler/moab/sbin:/usr/scheduler/moab/bin:/usr/scheduler/torque/sbin:/usr/scheduler/torque/bin:/usr/kerberos/bin:/usr/lpp/mmfs/bin:/usr/local/ddt/bin:/usr/local/bin:/usr/X11R6/bin:/usr/local/common/bin:/usr/bin:/bin:/usr/local/bin:/bin:/usr/bin:/home/loveletd/bin
+LD_LIBRARY_PATH:  /usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/mdl/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/dfII/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/lib:/usr/local/isde/cadence//IC5141//tools/lib:
+Compiling C file installdev.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c installdev.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o;
+/tmp/ccVtcFfY.s: Assembler messages:
+/tmp/ccVtcFfY.s:7: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:10: Error: suffix or operands invalid for `pop'
+/tmp/ccVtcFfY.s:18: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:20: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:24: Error: suffix or operands invalid for `pop'
+/tmp/ccVtcFfY.s:26: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:27: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:28: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:29: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:30: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:31: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:32: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:33: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:34: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:35: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:37: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:42: Error: suffix or operands invalid for `pop'
+/tmp/ccVtcFfY.s:50: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:52: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:56: Error: suffix or operands invalid for `pop'
+/tmp/ccVtcFfY.s:58: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:59: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:60: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:61: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:62: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:63: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:64: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:65: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:66: Error: relocated field and relocation type differ in signedness
+/tmp/ccVtcFfY.s:67: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:69: Error: suffix or operands invalid for `push'
+/tmp/ccVtcFfY.s:74: Error: suffix or operands invalid for `pop'
+Compiling C file bsource_1.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c bsource_1.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_1.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_1.o;
+/tmp/ccJsMqG8.s: Assembler messages:
+/tmp/ccJsMqG8.s:28: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:30: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:31: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:32: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:36: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:38: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:65: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:70: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:93: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:154: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:165: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:182: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:212: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:249: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:260: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:278: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:295: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:307: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:323: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:324: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:326: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:338: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:343: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:388: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:399: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:417: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:433: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:450: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:457: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:515: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:526: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:543: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:563: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:565: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:570: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:610: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:621: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:639: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:658: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:664: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:674: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:711: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:713: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:718: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:758: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:769: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:786: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:802: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:819: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:825: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:879: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:887: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:908: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:910: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:915: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:955: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:966: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:984: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1002: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1008: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1018: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1055: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1057: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1062: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1102: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1113: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1130: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1146: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1163: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1169: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1223: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1231: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1252: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1254: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1259: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1299: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1310: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1328: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1346: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1352: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1362: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1404: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1444: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1455: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1472: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1502: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1539: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1550: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1567: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1580: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1587: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1623: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1634: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1651: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1673: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1675: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1681: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1683: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1696: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1698: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1700: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1702: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1706: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1708: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1710: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1712: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1725: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1727: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1728: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1735: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1755: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1797: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1808: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1825: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1848: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1856: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1864: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1866: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1868: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1870: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1875: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1877: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1879: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1881: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1891: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:1893: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1898: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1907: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:1937: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1939: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1941: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1943: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1947: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1949: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1951: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1955: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1957: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1959: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1963: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1965: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1967: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:1970: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:1971: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:1972: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:1974: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:2001: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2037: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2048: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2067: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2079: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2116: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2127: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2136: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2150: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2186: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2197: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2206: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2225: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2241: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:2243: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:2244: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2250: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2258: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2310: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2321: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2338: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2364: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2372: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2379: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2390: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2426: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2437: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2457: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2469: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2507: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2518: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2527: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2541: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2580: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2591: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2600: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2620: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2626: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2637: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2674: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2685: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2700: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:2704: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2708: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2715: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2726: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2734: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2760: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2771: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2780: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2795: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2833: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2844: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2853: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2868: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2891: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2902: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2911: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2924: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:2938: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2974: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:2985: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3002: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3013: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3030: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3041: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3050: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3063: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3075: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3095: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3106: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3115: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3130: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3143: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3183: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3194: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3211: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3221: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3241: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3252: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3261: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3276: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3286: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3333: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3344: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3353: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3367: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3380: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3420: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3431: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3449: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3459: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3478: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3489: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3498: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3512: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3527: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3537: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3551: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3557: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3611: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3619: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3632: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3641: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3651: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3676: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3682: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3736: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3744: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3762: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3771: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3790: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3800: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3815: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3821: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3875: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3883: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3896: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3905: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3915: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3946: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3957: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:3966: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3981: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:3995: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4035: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4046: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4063: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4073: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4094: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4105: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4114: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4129: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4140: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4187: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4198: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4207: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4221: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4234: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4274: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4285: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4303: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4313: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4332: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4343: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4352: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4366: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4381: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4391: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4405: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4411: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4465: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4473: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4486: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4495: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4505: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4530: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4536: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4590: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4598: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4616: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4625: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4644: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4654: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4669: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4675: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4729: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4737: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4750: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4759: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4769: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4800: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4811: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4820: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4835: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4849: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4888: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4899: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4916: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4927: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4947: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4958: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:4967: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4982: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:4991: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5038: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5049: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5058: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5072: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5085: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5125: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5136: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5154: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5165: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5184: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5195: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5204: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5218: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5243: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5254: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5263: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5279: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5294: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5301: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5359: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5370: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5387: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5399: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5418: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5429: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5438: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5454: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5480: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5487: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5546: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5557: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5574: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5591: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5600: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5627: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5638: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5647: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5663: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5679: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5686: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5746: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5757: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5774: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5786: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5804: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5815: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5824: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5840: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5872: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5883: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5892: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5908: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:5917: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5922: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5967: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5978: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:5996: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6006: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6027: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6038: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6047: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6063: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6090: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6101: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6110: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6124: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6136: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6173: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6184: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6202: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6213: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6231: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6242: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6251: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6265: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6281: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6288: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6313: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6324: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6333: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6351: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6372: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6435: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6446: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6463: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6474: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6495: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6506: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6515: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6533: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6548: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6571: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6573: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6574: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6575: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6579: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:6581: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6607: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6612: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6631: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6690: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6700: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6716: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6745: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6782: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6792: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6808: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6824: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6836: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6847: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6856: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6863: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6918: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6928: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6944: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:6966: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6968: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6974: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6976: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:6989: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6991: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6993: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6995: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:6999: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7001: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7003: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7005: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7018: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7020: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7021: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7026: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7044: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7087: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7097: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7113: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7137: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7145: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7153: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7155: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7157: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7159: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7164: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7166: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7168: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7170: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7180: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7182: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7187: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7196: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7227: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:7228: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:7229: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:7231: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:7257: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7293: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7303: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7322: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7333: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7369: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7379: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7388: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7402: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7440: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7450: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7459: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7478: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7492: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7494: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7495: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7500: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7508: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7559: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7569: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7585: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7610: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7618: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7625: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7635: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7670: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7680: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7699: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7710: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7747: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7757: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7766: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7780: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7818: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7828: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7837: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7857: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7863: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7873: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7909: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7919: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7936: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:7940: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7944: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7951: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:7962: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7970: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:7995: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8005: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8014: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8030: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8068: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8078: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8087: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8107: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8117: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8142: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8152: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8161: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8174: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8187: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8224: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8234: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8250: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8261: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8279: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8289: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8298: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8311: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8330: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8337: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8362: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8372: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8381: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8400: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8418: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8477: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8487: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8503: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8514: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8538: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8548: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8557: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8576: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8591: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8618: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8620: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8621: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8622: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8626: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:8628: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8648: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8653: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8675: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8737: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8747: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8763: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8792: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8829: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8839: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8856: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8873: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8885: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8900: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8901: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:8903: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:8915: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8919: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8963: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8973: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:8990: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9006: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9023: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9029: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9089: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9099: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9115: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9135: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9137: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9141: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9181: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9191: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9208: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9227: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9232: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9242: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9279: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9281: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9285: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9323: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9333: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9350: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9366: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9383: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9388: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9444: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9451: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9472: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9474: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9478: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9519: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9529: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9546: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9564: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9569: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9579: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9616: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9618: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9622: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9660: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9670: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9687: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9703: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9720: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9725: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9781: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9788: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9809: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9811: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:9815: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9856: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9866: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9883: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9901: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9906: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9916: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:9957: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:9996: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10006: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10022: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10051: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10087: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10097: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10114: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10127: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10137: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10146: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10175: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10177: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10179: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10181: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10185: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10187: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10189: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10193: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10195: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10197: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10201: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10203: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10205: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:10208: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:10209: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:10210: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:10212: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:10243: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10253: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10262: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10275: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10288: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10324: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10334: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10351: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10361: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10378: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10388: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10397: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10412: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10427: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10446: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10456: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10465: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10480: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10492: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10531: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10541: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10557: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10567: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10586: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10596: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10605: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10620: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10630: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10674: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10684: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10693: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10707: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10720: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10760: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10770: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10787: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10797: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10815: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10825: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10834: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10848: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10864: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10873: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10885: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10890: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10943: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10950: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:10962: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10974: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:10983: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11007: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11012: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11064: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11071: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11087: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11096: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11113: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11122: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11135: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11140: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11196: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11203: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11215: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11227: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11236: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11265: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11275: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11284: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11299: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11312: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11350: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11360: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11377: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11387: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11407: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11417: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11426: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11443: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11454: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11498: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11508: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11517: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11531: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11544: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11584: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11594: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11611: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11621: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11639: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11649: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11658: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11672: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11688: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11697: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11709: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11714: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11767: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11774: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11786: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11798: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11807: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11831: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11836: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11888: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11895: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11911: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11920: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11937: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11946: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:11959: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:11964: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12020: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12027: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12039: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12051: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12060: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12089: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12099: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12108: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12123: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12136: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12175: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12185: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12202: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12212: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12231: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12241: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12250: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12267: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12276: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12320: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12330: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12339: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12354: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12366: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12405: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12415: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12432: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12443: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12461: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12471: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12480: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12495: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12519: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12529: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12538: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12553: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12566: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12572: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12631: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12641: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12657: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12669: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12691: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12701: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12710: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12725: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12749: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12755: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12815: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12825: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12841: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12857: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12866: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12891: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12901: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12910: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12925: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:12938: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:12944: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13004: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13014: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13030: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13042: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13059: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13069: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13078: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13093: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13122: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13132: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13141: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13157: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13166: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13170: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13214: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13224: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13241: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13251: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13271: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13281: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13290: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13306: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13332: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13342: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13351: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13366: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13379: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13416: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13426: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13443: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13455: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13472: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13482: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13491: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13506: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13523: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13530: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13554: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13564: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13573: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13590: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13607: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13669: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13679: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13695: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13706: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13726: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13736: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13745: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13762: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13775: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13794: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:13796: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:13797: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:13798: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:13802: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:13804: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13824: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13832: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13845: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13868: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13893: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13904: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13914: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13930: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13943: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13959: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:13971: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13983: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:13996: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14006: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14023: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14039: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14051: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14062: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14064: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14072: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14082: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14113: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14114: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14115: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14117: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14137: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14142: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14145: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14148: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14155: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14165: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14174: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14178: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14181: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14189: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14195: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14202: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14214: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14226: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14239: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14249: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14266: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14277: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14282: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14285: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14288: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14295: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14305: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14314: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14318: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14321: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14329: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14335: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14347: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14354: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14358: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14363: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14367: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14371: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14377: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14387: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14396: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14400: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14404: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14414: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14425: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14434: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14458: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14483: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14494: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14504: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14520: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14531: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14536: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14540: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14544: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14550: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14560: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14569: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14573: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14577: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14587: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14598: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14603: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14625: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14627: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14628: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14629: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14633: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14636: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14641: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14649: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14703: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14713: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14729: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14751: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14752: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14754: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14758: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14760: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14761: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14767: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14769: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14771: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14773: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14777: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14779: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14781: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14783: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14787: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14798: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14800: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14801: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14806: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14867: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14877: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14893: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14918: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:14926: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:14934: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14936: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14938: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14940: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14945: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14947: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14949: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14951: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:14964: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14965: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14966: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14968: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:14978: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15015: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15025: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15043: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15054: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15089: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15099: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15108: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15122: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15162: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15172: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15181: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15200: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15216: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:15218: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:15219: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15224: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15280: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15290: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15306: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15331: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15339: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15346: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15356: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15392: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15402: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15420: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15431: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15468: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15478: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15487: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15502: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15540: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15550: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15559: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15576: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15589: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15626: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15636: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15649: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:15653: Error: suffix or operands invalid for `push'
+/tmp/ccJsMqG8.s:15657: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15660: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:15661: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15664: Error: suffix or operands invalid for `pop'
+/tmp/ccJsMqG8.s:15669: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15686: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15700: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15710: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15719: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15735: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15775: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15785: Error: relocated field and relocation type differ in signedness
+/tmp/ccJsMqG8.s:15794: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15813: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccJsMqG8.s:15823: Error: 8-byte relocation cannot be applied to 4-byte field
+Compiling C file bsource_7.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c bsource_7.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_7.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_7.o;
+/tmp/ccYcAzji.s: Assembler messages:
+/tmp/ccYcAzji.s:12: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:14: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:15: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:16: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:20: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:24: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:38: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:56: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:74: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:88: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:100: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:120: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:132: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:149: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:160: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:170: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:173: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:200: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:202: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:204: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:206: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:210: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:212: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:214: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:216: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:217: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:218: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:219: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:221: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:223: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:225: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:227: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:230: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:231: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:232: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:234: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:250: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:255: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:259: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:263: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:267: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:272: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:277: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:281: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:295: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:297: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:298: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:299: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:303: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:306: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:319: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:334: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:353: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:364: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:373: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:376: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:403: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:404: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:405: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:406: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:408: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:410: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:412: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:414: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:417: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:418: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:419: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:421: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:441: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:446: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:450: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:468: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:470: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:471: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:472: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:476: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:478: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:493: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:504: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:514: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:532: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:550: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:564: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:576: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:596: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:608: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:625: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:636: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:646: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:649: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:676: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:678: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:680: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:682: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:686: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:688: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:690: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:692: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:696: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:703: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:704: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:715: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:716: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:717: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:718: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:720: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:722: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:724: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:726: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:730: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:732: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:734: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:740: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:741: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:743: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:746: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:747: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:748: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:750: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:770: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:775: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:779: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:783: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:787: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:792: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:797: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:801: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:805: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:819: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:821: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:822: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:823: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:827: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:829: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:844: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:860: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:875: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:894: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:905: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:914: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:917: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:950: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:957: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:958: Error: relocated field and relocation type differ in signedness
+/tmp/ccYcAzji.s:969: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:970: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:971: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:972: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:974: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:976: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:978: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:980: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:983: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:984: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:985: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:987: Error: suffix or operands invalid for `pop'
+/tmp/ccYcAzji.s:1011: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:1016: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:1020: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:1024: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccYcAzji.s:1032: Error: suffix or operands invalid for `push'
+/tmp/ccYcAzji.s:1035: Error: suffix or operands invalid for `pop'
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -shared -O3 -fPIC -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/libahdlcmi.so ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_1.o ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_7.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o: No such file or directory
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_1.o: No such file or directory
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/bsource_7.o: No such file or directory
+gnumake: *** [obj/Linux2.6.18-53.1.13.el5+gcc/optimize/libahdlcmi.so] Error 1

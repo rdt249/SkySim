@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+MAINLIB_TESTING/SL_nand2/schematic SL_nand2
+$endmodel
+$net
+$endnet
+$param
+$endparam

@@ -1,0 +1,5 @@
+include "design_wrapper.lib" section=tt_fet
+include "design_wrapper.lib" section=tt_rc
+include "design_wrapper.lib" section=tt_parRC
+include "design_wrapper.lib" section=tt_cell
+include "design_wrapper.lib" section=models

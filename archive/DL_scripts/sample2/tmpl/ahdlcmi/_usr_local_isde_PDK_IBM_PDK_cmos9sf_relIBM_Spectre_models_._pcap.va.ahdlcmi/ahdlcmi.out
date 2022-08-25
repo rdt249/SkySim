@@ -1,0 +1,729 @@
+ahdlcmicompile: Compiling ahdlcmi in ahdlcmi/_usr_local_isde_PDK_IBM_PDK_cmos9sf_relIBM_Spectre_models_._pcap.va.ahdlcmi/ for Linux2.6.18-53.1.13.el5+gcc with optimize using gcc on Wed Apr  9 15:58:51 CDT 2008 [0]
+ahdlcmicompile: Generating makefile
+PATH:  /usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin:/usr/local/isde/cadence//IC5141//tools/dracula/bin:/usr/local/isde/cadence//IC5141//tools/concice/bin:/usr/local/isde/cadence//IC5141//tools/dfII/bin:/usr/local/isde/cadence//IC5141//tools/bin:/usr/local/isde/cadence/IC5141/tools/dfII/bin:/usr/local/isde/cadence/IC5141/tools/bin:/usr/local/isde/cadence/IC5141/share/bin:/usr/scheduler/moab/sbin:/usr/scheduler/moab/bin:/usr/scheduler/torque/sbin:/usr/scheduler/torque/bin:/usr/kerberos/bin:/usr/lpp/mmfs/bin:/usr/local/ddt/bin:/usr/local/bin:/usr/X11R6/bin:/usr/local/common/bin:/usr/bin:/bin:/usr/local/bin:/bin:/usr/bin:/home/loveletd/bin
+LD_LIBRARY_PATH:  /usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/mdl/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/dfII/lib:/usr/local/isde/cadence/IC5141/tools.lnx86/lib:/usr/local/isde/cadence//IC5141//tools/lib:
+Compiling C file installdev.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c installdev.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o;
+/tmp/ccNUvx1r.s: Assembler messages:
+/tmp/ccNUvx1r.s:7: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:10: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:18: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:20: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:24: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:26: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:27: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:28: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:29: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:30: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:31: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:32: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:33: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:34: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:35: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:37: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:42: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:50: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:52: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:56: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:58: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:59: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:60: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:61: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:62: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:63: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:64: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:65: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:66: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:67: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:69: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:74: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:82: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:84: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:88: Error: suffix or operands invalid for `pop'
+/tmp/ccNUvx1r.s:90: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:91: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:92: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:93: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:94: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:95: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:96: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:97: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:98: Error: relocated field and relocation type differ in signedness
+/tmp/ccNUvx1r.s:99: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:101: Error: suffix or operands invalid for `push'
+/tmp/ccNUvx1r.s:106: Error: suffix or operands invalid for `pop'
+Compiling C file pcap_cap.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c pcap_cap.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cap.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cap.o;
+/tmp/ccV9NVVx.s: Assembler messages:
+/tmp/ccV9NVVx.s:16: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:18: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:19: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:23: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:25: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:30: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:34: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:43: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:46: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:54: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:58: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:70: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:207: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:208: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:210: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:215: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:219: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:225: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:229: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:247: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:249: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:250: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:254: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:256: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:261: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:265: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:274: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:277: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:285: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:289: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:301: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:378: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:379: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:381: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:386: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:390: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:396: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:400: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:426: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:428: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:429: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:430: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:434: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:441: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:445: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:449: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:458: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:461: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:469: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:472: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:489: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:494: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:555: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:613: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:702: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:706: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:716: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:719: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:734: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:745: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:747: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:749: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:751: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:754: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:755: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:756: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:758: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:772: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:780: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:783: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:789: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:797: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:815: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:817: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:818: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:819: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:823: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:830: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:834: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:838: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:847: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:850: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:858: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:862: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:873: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:954: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:958: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:968: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:971: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:999: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1000: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1001: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1003: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1023: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:1027: Error: relocated field and relocation type differ in signedness
+/tmp/ccV9NVVx.s:1033: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:1037: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccV9NVVx.s:1045: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:1047: Error: suffix or operands invalid for `push'
+/tmp/ccV9NVVx.s:1050: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1052: Error: suffix or operands invalid for `pop'
+/tmp/ccV9NVVx.s:1054: Error: suffix or operands invalid for `pop'
+Compiling C file pcap_cur.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c pcap_cur.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cur.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cur.o;
+/tmp/ccT9sp2O.s: Assembler messages:
+/tmp/ccT9sp2O.s:24: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:26: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:27: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:28: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:32: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:35: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:40: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:45: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:49: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:58: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:61: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:69: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:72: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:89: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:94: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:115: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:120: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:122: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:127: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:137: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:175: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:180: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:182: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:187: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:200: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:219: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:226: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:259: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:264: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:266: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:271: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:278: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:279: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:287: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:296: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:308: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:311: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:333: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:334: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:348: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:398: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:400: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:428: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:449: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:454: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:456: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:461: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:471: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:509: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:514: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:516: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:521: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:534: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:553: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:560: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:593: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:598: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:600: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:605: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:612: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:613: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:621: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:630: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:642: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:645: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:667: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:668: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:682: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:730: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:734: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:759: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:762: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:787: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:801: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:805: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:815: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:818: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:845: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:847: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:849: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:851: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:854: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:855: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:856: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:858: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:920: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:933: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:946: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:972: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:973: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:981: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:990: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1011: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1012: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1020: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1043: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1044: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1090: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1095: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1108: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1134: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1135: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1143: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1152: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1173: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1174: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1182: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1205: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1206: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1212: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1220: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1223: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1229: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1255: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1257: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1258: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1259: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1263: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1270: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1274: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1278: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1287: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1290: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1298: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1302: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1313: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1333: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1338: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1340: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1345: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1354: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1375: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1395: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1400: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1402: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1407: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1416: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1437: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1440: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1455: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1462: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1466: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1476: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1479: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1507: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1508: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1509: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1511: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1533: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1551: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1552: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1560: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1578: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1579: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1589: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1593: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1599: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1603: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1629: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1631: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1632: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1633: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1637: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1640: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1645: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1650: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1654: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1663: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1666: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1674: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1677: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:1694: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1699: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1720: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1725: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1727: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1732: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1742: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1780: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1785: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1787: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1792: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1805: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1824: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1831: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1864: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1869: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1871: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:1876: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1883: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1884: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1892: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:1901: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1913: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1916: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1938: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1939: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:1953: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2003: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2005: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2033: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2054: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2059: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2061: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2066: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2076: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2114: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2119: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2121: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2126: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2139: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2158: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2165: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2198: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2203: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2205: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2210: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2217: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2218: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2226: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2235: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2247: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2250: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2272: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2273: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2287: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2335: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2339: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2364: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2367: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2392: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2406: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2410: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2420: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2423: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2450: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2452: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2454: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2456: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2459: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2460: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2461: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2463: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2525: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2538: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2551: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2577: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2578: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2586: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2595: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2616: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2617: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2625: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2648: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2649: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2695: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2700: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2713: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2739: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2740: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2748: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2757: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2778: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2779: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2787: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2810: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2811: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2817: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2825: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2828: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2834: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2860: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2862: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2863: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2864: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2868: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2875: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2879: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2883: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2892: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2895: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2903: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2907: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:2918: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:2938: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2943: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2945: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:2950: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2959: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:2980: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:3000: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3005: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3007: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3012: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3021: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3042: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:3045: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3060: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:3067: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:3071: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:3081: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:3084: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3112: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3113: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3114: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3116: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3138: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3156: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3157: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3165: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3183: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3184: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3194: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:3198: Error: relocated field and relocation type differ in signedness
+/tmp/ccT9sp2O.s:3204: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3208: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccT9sp2O.s:3216: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:3218: Error: suffix or operands invalid for `push'
+/tmp/ccT9sp2O.s:3221: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3223: Error: suffix or operands invalid for `pop'
+/tmp/ccT9sp2O.s:3225: Error: suffix or operands invalid for `pop'
+Compiling C file pcap_res2.c (optimize)
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -ansi -march=i486 -O3 -DSYSV -DSVR4 -D_REENTRANT -fPIC   -DconfigSPECTRE -I. -I/usr/local/isde/cadence/IC5141/tools.lnx86/spectre/ahdlcmi/include -c pcap_res2.c -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_res2.o || rm -f -f obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_res2.o;
+/tmp/ccguNr5d.s: Assembler messages:
+/tmp/ccguNr5d.s:24: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:26: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:27: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:28: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:32: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:35: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:42: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:57: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:60: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:78: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:83: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:97: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:110: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:114: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:115: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:127: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:177: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:179: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:203: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:218: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:231: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:235: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:236: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:248: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:296: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:300: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:319: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:323: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:366: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:369: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:378: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:382: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:395: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:396: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:398: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:400: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:403: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:411: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:414: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:423: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:436: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:441: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:443: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:447: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:457: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:460: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:487: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:489: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:491: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:493: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:497: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:499: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:501: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:504: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:505: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:506: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:508: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:524: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:533: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:534: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:536: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:538: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:541: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:546: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:570: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:574: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:580: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:594: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:614: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:657: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:727: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:755: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:764: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:767: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:773: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:774: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:778: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:797: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:799: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:800: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:801: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:805: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:814: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:819: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:828: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:831: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:842: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:856: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:867: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:872: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:886: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:897: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:902: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:905: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:927: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:930: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:939: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:943: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:956: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:958: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:962: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:972: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:975: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1003: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1004: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1005: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1007: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1027: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1031: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1037: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1055: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1101: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1106: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1109: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1115: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1119: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1145: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1147: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1148: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1149: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1153: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1156: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1163: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1178: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1181: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1199: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1204: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1218: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1231: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1235: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1236: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1248: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1298: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1300: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1324: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1339: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1352: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1356: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1357: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1369: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1417: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1421: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1440: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1444: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1487: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1490: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1499: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1503: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1516: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1517: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1519: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1521: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1524: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1532: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1535: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1544: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1557: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1562: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1564: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1568: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1578: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1581: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1608: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1610: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1612: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1614: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1618: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1620: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1622: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1625: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1626: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1627: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1629: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1645: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1654: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1655: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1657: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1659: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1662: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1667: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1691: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1695: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1701: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1715: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1735: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1778: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1848: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1876: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1885: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1888: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1894: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1895: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1899: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1918: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1920: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1921: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1922: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1926: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:1935: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1940: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1949: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1952: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:1963: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:1977: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1988: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:1993: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2007: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2018: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2023: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2026: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2048: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2051: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2060: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2064: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2077: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2079: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2083: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2093: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2096: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2124: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2125: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2126: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2128: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2148: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2152: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2158: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2176: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2222: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2227: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2230: Error: relocated field and relocation type differ in signedness
+/tmp/ccguNr5d.s:2236: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2240: Error: 8-byte relocation cannot be applied to 4-byte field
+/tmp/ccguNr5d.s:2248: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2250: Error: suffix or operands invalid for `push'
+/tmp/ccguNr5d.s:2253: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2255: Error: suffix or operands invalid for `pop'
+/tmp/ccguNr5d.s:2257: Error: suffix or operands invalid for `pop'
+/usr/local/isde/cadence/IC5141/tools.lnx86/systemc/gcc/install/bin/gcc -shared -O3 -fPIC -o obj/Linux2.6.18-53.1.13.el5+gcc/optimize/libahdlcmi.so ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cap.o ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cur.o ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_res2.o  -Wl,-rpath,/usr/lib -Wl,-rpath,/lib -s 
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/installdev.o: No such file or directory
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cap.o: No such file or directory
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_cur.o: No such file or directory
+gcc: ./obj/Linux2.6.18-53.1.13.el5+gcc/optimize/pcap_res2.o: No such file or directory
+gnumake: *** [obj/Linux2.6.18-53.1.13.el5+gcc/optimize/libahdlcmi.so] Error 1

@@ -7,10 +7,7 @@ import os
 RUN = {
     'dir':'dev',
     'lib':'MAINLIB_TESTING',
-    'cell':'SL_nand2',
-    'watch':['in0','in1','out'],
-    'target':'in0',
-    'stim':'type=pulse val0=0 val1=1.2 delay=0 rise=0.05n fall=0.05n width=10n period=20n'
+    'cell':'SL_nand2'
 }
 
 def ExportNetlist(): # export a netlist for a specified library and cell
@@ -19,7 +16,7 @@ def ExportNetlist(): # export a netlist for a specified library and cell
     data = data.replace('<CELL>',RUN['cell']) # replace placeholder with cell name
     open('~/SW_Run/si.env','w').write(data) # set up SW_Run to export netlist
     subprocess.call(['source','~/SW_Run/bashrc.IC']) # make sure we're in the right env
-    subprocess.call(['~/SW_Run/si','-batch','-command','netlist']) # generate CDL netlist
+    subprocess.call(['si','-batch','-command','netlist']) # generate CDL netlist
 
 def CloneNetlist():
     netlist = open('~/SW_Run/netlist','r').read()
@@ -37,6 +34,7 @@ def CreateRun(run):
     RUN['nodes'] = FindNodes(netlist)
 
 def main():
+    print(0)
 
 if __name__ == '__main__':
     main()
