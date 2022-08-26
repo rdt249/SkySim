@@ -1,5 +1,5 @@
 
-// simulation setup
+// simulation setup for SL_nand2
 // stimuli: VDD = 1.2V, V0 = pulse, V1 = high
 // test type: 50ns transient simulation
 simulator lang=spectre
