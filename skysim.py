@@ -4,6 +4,7 @@ import subprocess, sys, os
 
 INPUT_PATH = os.getcwd() + '/input.txt'
 OUTPUT_PATH = os.getcwd() + '/output.txt'
+RUN_DIR = os.path.expanduser('~') + '/SW_Run/'
 
 # run configuration
 RUN = {
@@ -16,13 +17,13 @@ def ExportNetlist(): # export a netlist for a specified library and cell
     data = open('template/si.env','r').read() # start from template (based on File->Export->CDL...)
     data = data.replace('<LIB>',RUN['lib']) # replace placeholder with lib name
     data = data.replace('<CELL>',RUN['cell']) # replace placeholder with cell name
-    open('~/SW_Run/si.env','w').write(data) # set up SW_Run to export netlist
-    subprocess.call(['source','~/SW_Run/bashrc.IC']) # make sure we're in the right env
+    open(RUN_DIR + 'si.env','w').write(data) # set up SW_Run to export netlist
+    subprocess.call(['source',RUN_DIR + 'bashrc.IC']) # make sure we're in the right env
     subprocess.call(['si','-batch','-command','netlist']) # generate CDL netlist
 
 def CloneNetlist():
-    netlist = open('~/SW_Run/netlist','r').read()
-    open(RUN['dir'] + '/netlist','w').write(netlist)
+    netlist = open(RUN_DIR + 'netlist','r').read()
+    open(RUN['dir'] + 'netlist','w').write(netlist)
     return netlist
 
 def FindNodes(netlist):
