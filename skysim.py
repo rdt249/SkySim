@@ -23,7 +23,7 @@ def ExportNetlist(): # export a netlist for a specified library and cell
 
 def CloneNetlist():
     netlist = open(RUN_DIR + 'netlist','r').read()
-    open(RUN['dir'] + 'netlist','w').write(netlist)
+    open(RUN['dir'] + '/netlist','w').write(netlist)
     return netlist
 
 def FindNodes(netlist):
@@ -39,6 +39,7 @@ def CreateRun(run):
 def main():
     print(INPUT_PATH)
     print(OUTPUT_PATH)
+    ExportNetlist()
 
 if __name__ == '__main__':
     args = sys.argv[1:]
