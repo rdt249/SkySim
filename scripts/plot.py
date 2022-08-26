@@ -1,3 +1,5 @@
+# Stephen Lawrence 2022
+
 import sys
 import pandas as pd
 pd.options.plotting.backend = "plotly"

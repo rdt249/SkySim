@@ -1,4 +1,5 @@
 #!
+# Stephen Lawrence 2022
 
 FMT="\e[1;34m\t"
 RST="\e[1;m\n"
