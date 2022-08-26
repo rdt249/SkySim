@@ -3,7 +3,13 @@ Cadence Spectre simulation director
 
 ## Installation
 
-```git clone https://github.com/rdt249/SkySim```
+Clone the repo and install required Python packages.
+
+```
+git clone https://github.com/rdt249/SkySim
+cd SkySim
+pip3 install -r requirements.txt
+```
 
 ## Run a trivial simulation
 
