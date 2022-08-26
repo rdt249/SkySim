@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "19.1.0.237.isr3"
-"date" "10:44:24 PM, Thur Aug 25, 2022"
+"date" "1:20:11 PM, Fri Aug 26, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info.primitives"
 "analysis name" "primitives"
@@ -28,5 +28,13 @@ VALUE
 "w l as ad ps pd nrd nrs m nqsmod acnqsmod isnoisy trise aforward areverse delvto mulmu0 mulu0 delk1 delnfct geo rdc rsc sa sb sa1 sa2 sa3 sa4 sa5 sa6 sa7 sa8 sa9 sa10 sb1 sb2 sb3 sb4 sb5 sb6 sb7 sb8 sb9 sb10 sw1 sw2 sw3 sw4 sw5 sw6 sw7 sw8 sw9 sw10 stimod sca scb scc sc mulid0 mulbeta "
 "off triode sat subth breakdown "
 "d g s b "
+)
+"vsource" "primitive" (
+""
+"v i pwr "
+"tempeff "
+"dc type fundname delay edgetype val0 val1 period rise fall width file offset scale stretch rms pwlfilter rolloff pwlbandwidth allbrkpts pwlperiod pwlperiodstart twidth sinedc ampl freq sinephase ampl2 freq2 sinephase2 fundname2 iqmodfiles fmmodindex fmmodfreq fmmodfiles ammodindex ammodoffset ammodfreq ammodphase damp freqvec amplvec phasevec maxharms td1 tau1 td2 tau2 expperiod data rptstart rpttimes td01 td10 ref jitter rjseed rjrms pjamp pjfreq pjtype seed taps lfsrtaps lfsrseed registerlength triggerthreshold triggerdelthresh triggerdirection transitionreference modulation pam4_mapping oscmacrofile freqscale amplscale noisefile noisetype noiseinterp isnoisy mag phase xfmag pacmag pacphase m tc1 tc2 tnom trise "
+""
+"p n ctlp ctln "
 )
 END

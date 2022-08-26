@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "19.1.0.237.isr3"
-"date" "10:44:24 PM, Thur Aug 25, 2022"
+"date" "1:20:11 PM, Fri Aug 26, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info"
 "analysis name" "outputParameter"
@@ -51,6 +51,14 @@ TYPE
 "pdeff" FLOAT DOUBLE PROP(
 "units" "m"
 "description" "Effective drain perimeter (alias=lv11)"
+)
+) PROP(
+"key" "inst"
+)
+"vsource~instparams" STRUCT(
+"tempeff" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Effective temperature for a single device"
 )
 ) PROP(
 "key" "inst"
@@ -111,5 +119,25 @@ VALUE
 1.390000000000000e-06
 ) PROP(
 "model" "MN1.nshort.7"
+)
+"V1" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+"V0" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+"GND" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
+)
+"VDD" "vsource~instparams" (
+2.700000000000000e+01
+) PROP(
+"model" "vsource"
 )
 END
