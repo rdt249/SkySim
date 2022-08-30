@@ -11,12 +11,12 @@ cd SkySim
 pip3 install -r requirements.txt
 ```
 
-## Run a trivial simulation
+## Run a simple simulation
 
-```scripts/test.sh SL_nand2```
+```scripts/sim.sh SL_inv_1x test1```
 
-Note: You may get an error about permissions. Give permission with `chmod +x scripts/test.sh`.
+Note: You may get an error about permissions. Give permission with `chmod +x scripts/sim.sh`.
 
-You may have to open the demo circuit `SL_nand2` in Virtuoso before calling `scripts/test.sh`.
-This will automatically create the netlist used in the simulation.
-You can simulate any cell you want, but currently `template/simulate.scs` is only set up for `SL_nand2`
+If the Spectre netlist (`input.scs`) has not yet been created with Virtuoso, the easiest way to do it manually is through Command Interpreter Window (CIW), which is the first window that pops up when you start Virtuoso. The following example creates a netlist for cell `SL_inv_1x` in library `MAINLIB_TESTING`:
+
+```simulator("spectre"), design("MAINLIB_TESTING","SL_inv_1x","schematic"), createNetlist()```

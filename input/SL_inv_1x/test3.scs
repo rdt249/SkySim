@@ -1,0 +1,12 @@
+
+// simulation setup for SL_inv_1x
+simulator lang=spectre
+VDD (vdd 0) vsource dc=1.2
+GND (vss 0) vsource dc=0
+V0 (in 0) vsource dc=1.2
+
+// current source mimic ion collision on MN0
+STRIKE (out vss) isource type=pulse val0=0 val1=1m period=50n width=5p rise=1p fall=5p
+
+// transient sim for 100ps
+sim tran stop=100p
