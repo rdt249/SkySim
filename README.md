@@ -13,6 +13,8 @@ pip3 install -r requirements.txt
 
 ## Run a simple simulation
 
+The following command simulates the cell `SL_inv_1x` using the instructions defined in `input/SL_inv_1x/test1.scs`:
+
 ```scripts/sim.sh SL_inv_1x test1```
 
 Note: You may get an error about permissions. Give permission with `chmod +x scripts/sim.sh`.
