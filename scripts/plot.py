@@ -19,7 +19,7 @@ def plot(cell_name,test_name):
     os.makedirs(wave_path,exist_ok=True) # create folder for waveform
     df.to_csv(wave_path + '/waveform.csv') # create csv
     fig = df.plot(title=file_name) # draw a figure for the data
-    fig.write_html(wave_path + '/waveform.html') # create HTML
+    # fig.write_html(wave_path + '/waveform.html') # create HTML (pretty big file!)
     fig.write_image(wave_path + '/waveform.png') # create PNG
     return fig
 

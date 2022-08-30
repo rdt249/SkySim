@@ -1,0 +1,44 @@
+// Generated for: spectre
+// Generated on: Aug 19 21:00:58 2022
+// Design library name: MAINLIB_TESTING
+// Design cell name: SL_nand2
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "design_wrapper.lib" section=tt_fet
+include "design_wrapper.lib" section=tt_rc
+include "design_wrapper.lib" section=tt_parRC
+include "design_wrapper.lib" section=tt_cell
+include "design_wrapper.lib" section=models
+
+// Library name: MAINLIB_TESTING
+// Cell name: SL_nand2
+// View name: schematic
+MN1 (net13 in1 vss vss) nshort l=0.2 w=0.5 ad=0.0975 as=0.0975 pd=1.39 ps=1.39 nrs=0 nrd=0 m=1 mult=1
+MN0 (out in0 net13 net13) nshort l=0.2 w=0.5 ad=0.0975 as=0.0975 pd=1.39 ps=1.39 nrs=0 nrd=0 m=1 mult=1
+MP1 (out in1 vdd vdd) pshort l=0.2 w=0.4 ad=0.078 as=0.078 pd=1.19 ps=1.19 nrs=0 nrd=0 m=1 mult=1
+MP0 (out in0 vdd vdd) pshort l=0.2 w=0.4 ad=0.078 as=0.078 pd=1.19 ps=1.19 nrs=0 nrd=0 m=1 mult=1
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 gmin=1e-12 rforce=1 maxnotes=5 \
+    maxwarns=5 digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub
+
+// simulation setup for SL_nand2
+simulator lang=spectre
+VDD (vdd 0) vsource dc=1.2
+GND (vss 0) vsource dc=0
+V0 (in0 0) vsource dc=1.2
+V1 (in1 0) vsource dc=0
+
+// current source mimic ion collision on MP0
+STRIKE (vdd out) isource type=pulse val0=0 val1=300u period=50n rise=5p fall=5p width=1p
+
+// transient sim for 100 ps
+sim tran stop=100p

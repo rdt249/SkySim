@@ -1,0 +1,3445 @@
+HEADER
+"PSFversion" "1.00"
+"simulator" "spectre"
+"version" "19.1.0.237.isr3"
+"date" "4:07:41 PM, Tue Aug 30, 2022"
+"design" "// Generated for: spectre"
+"analysis type" "info"
+"analysis name" "modelParameter"
+"analysis description" "Circuit Information"
+"xVecSorted" "unknown"
+"tolerance.relative" 0.00100000
+TYPE
+"bsim3v3" STRUCT(
+"vtho" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Threshold voltage at zero body bias for long-channel devices. For enhancement-mode devices, vtho > 0 for n-channel and vth < 0 for p-channel. Default value is calculated from other model parameters"
+)
+"vfb" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Flat-band voltage"
+)
+"k1" FLOAT DOUBLE PROP(
+"units" "sqrt(V)"
+"description" "Body-effect coefficient"
+)
+"k2" FLOAT DOUBLE PROP(
+"description" "Charge-sharing parameter"
+)
+"k3" FLOAT DOUBLE PROP(
+"description" "Narrow width coefficient"
+)
+"k3b" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Narrow width coefficient"
+)
+"w0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Narrow width coefficient"
+)
+"nlx" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Lateral nonuniform doping coefficient"
+)
+"gamma1" FLOAT DOUBLE PROP(
+"units" "sqrt(V)"
+"description" "Body-effect coefficient near the surface"
+)
+"gamma2" FLOAT DOUBLE PROP(
+"units" "sqrt(V)"
+"description" "Body-effect coefficient in the bulk"
+)
+"vbx" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Threshold voltage transition body voltage"
+)
+"vbm" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum applied body voltage"
+)
+"dvt0" FLOAT DOUBLE PROP(
+"description" "First coefficient of short-channel effects"
+)
+"dvt1" FLOAT DOUBLE PROP(
+"description" "Second coefficient of short-channel effects"
+)
+"dvt2" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Body-bias coefficient of short-channel effects"
+)
+"dvt0w" FLOAT DOUBLE PROP(
+"units" "1/m"
+"description" "First coefficient of narrow-width effects"
+)
+"dvt1w" FLOAT DOUBLE PROP(
+"units" "1/m"
+"description" "Second coefficient of narrow-width effects"
+)
+"dvt2w" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Body-bias coefficient of narrow-width effects"
+)
+"a0" FLOAT DOUBLE PROP(
+"description" "Nonuniform depletion width effect coefficient"
+)
+"b0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Bulk charge coefficient due to narrow width effect"
+)
+"b1" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Bulk charge coefficient due to narrow width effect"
+)
+"a1" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "No-saturation coefficient"
+)
+"a2" FLOAT DOUBLE PROP(
+"description" "No-saturation coefficient"
+)
+"ags" FLOAT DOUBLE PROP(
+"units" "1/v"
+"description" "Gate-bias dependence of Abulk"
+)
+"keta" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Body-bias coefficient for non-uniform depletion width effect"
+)
+"ivth" FLOAT DOUBLE PROP(
+"units" "A"
+"description" "Vth current parameter. The default value is taken from the options parameter 'ivthn' or 'ivthp', depending on the type of the model"
+)
+"ivthw" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Width offset for constant current Vth. The default value is taken from the options parameter 'ivthw'"
+)
+"ivthl" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Length offset for constant current Vth. The default value is taken from the options parameter 'ivthl'"
+)
+"ivth_vdsmin" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Minimum Vds in constant current Vth calculating. The default value is taken from the options parameter 'ivth_vdsmin'"
+)
+"nsub" FLOAT DOUBLE PROP(
+"units" "cm^-3"
+"description" "Substrate doping concentration"
+)
+"nch" FLOAT DOUBLE PROP(
+"units" "cm^-3"
+"description" "Peak channel doping concentration"
+)
+"ngate" FLOAT DOUBLE PROP(
+"units" "cm^-3"
+"description" "Poly-gate doping concentration"
+)
+"xj" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Source/drain junction depth"
+)
+"lint" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Lateral diffusion for one side"
+)
+"wint" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Width reduction for one side"
+)
+"ll" FLOAT DOUBLE PROP(
+"units" "m^lln"
+"description" "Length dependence of delta L"
+)
+"lln" FLOAT DOUBLE PROP(
+"description" "Length exponent of delta L"
+)
+"lw" FLOAT DOUBLE PROP(
+"units" "m^lwn"
+"description" "Width dependence of delta L"
+)
+"lwn" FLOAT DOUBLE PROP(
+"description" "Width exponent of delta L"
+)
+"lwl" FLOAT DOUBLE PROP(
+"units" "m^lwn+lln"
+"description" "Area dependence of delta L"
+)
+"wl" FLOAT DOUBLE PROP(
+"units" "m^wln"
+"description" "Length dependence of delta W"
+)
+"wln" FLOAT DOUBLE PROP(
+"description" "Length exponent of delta W"
+)
+"ww" FLOAT DOUBLE PROP(
+"units" "m^wwn"
+"description" "Width dependence of delta W"
+)
+"wwn" FLOAT DOUBLE PROP(
+"description" "Width exponent of delta W"
+)
+"wwl" FLOAT DOUBLE PROP(
+"units" "m^wwn+wln"
+"description" "Area dependence of delta W"
+)
+"dwg" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "Gate-bias dependence of channel width"
+)
+"dwb" FLOAT DOUBLE PROP(
+"units" "m/sqrt(v)"
+"description" "Body-bias dependence of channel width"
+)
+"tox" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Gate oxide thickness"
+)
+"dtoxcv" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Delta oxide thickness"
+)
+"toxm" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Tox at which parameters were extracted"
+)
+"toxe" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Electrical gate equivalent oxide thickness"
+)
+"xt" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Doping depth"
+)
+"rdsw" FLOAT DOUBLE PROP(
+"units" "ohm*um^wr"
+"description" "Width dependence of drain-source resistance"
+)
+"prwb" FLOAT DOUBLE PROP(
+"units" "1/sqrt(v)"
+"description" "Body-effect coefficient for Rds"
+)
+"prwg" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Gate-effect coefficient for Rds"
+)
+"wr" FLOAT DOUBLE PROP(
+"description" "Width offset for parasitic resistance"
+)
+"binflag" FLOAT DOUBLE PROP(
+"description" "49 binning factor"
+)
+"lref" FLOAT DOUBLE PROP(
+"description" "49 binning length factor"
+)
+"wref" FLOAT DOUBLE PROP(
+"description" "49 binning width factor"
+)
+"u0" FLOAT DOUBLE PROP(
+"description" "Low-field surface mobility at `tnom'. Default is 250 for PMOS Mobility can also be specified in M2/Vs"
+)
+"vsat" FLOAT DOUBLE PROP(
+"units" "m/s"
+"description" "Carrier saturation velocity at `tnom'"
+)
+"ua" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "First-order mobility reduction coefficient"
+)
+"ub" FLOAT DOUBLE PROP(
+"units" "m^2/v^2"
+"description" "Second-order mobility reduction coefficient"
+)
+"uc" FLOAT DOUBLE PROP(
+"units" "m/v^2"
+"description" "Body-bias dependence of mobility. Default is -0.046 and unit is 1/V for mobmod=3"
+)
+"drout" FLOAT DOUBLE PROP(
+"description" "DIBL effect on output resistance coefficient"
+)
+"pclm" FLOAT DOUBLE PROP(
+"description" "Channel length modulation coefficient"
+)
+"pdiblc1" FLOAT DOUBLE PROP(
+"description" "First coefficient of drain-induced barrier lowering"
+)
+"pdiblc2" FLOAT DOUBLE PROP(
+"description" "Second coefficient of drain-induced barrier lowering"
+)
+"pdiblcb" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Body-effect coefficient for DIBL"
+)
+"pscbe1" FLOAT DOUBLE PROP(
+"units" "V/m"
+"description" "First coefficient of substrate current body effect"
+)
+"pscbe2" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "Second coefficient of substrate current body effect"
+)
+"pvag" FLOAT DOUBLE PROP(
+"description" "Gate dependence of Early voltage"
+)
+"delta" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Effective drain voltage smoothing parameter"
+)
+"cdsc" FLOAT DOUBLE PROP(
+"units" "F/m^2"
+"description" "Source/drain and channel coupling capacitance"
+)
+"cdscb" FLOAT DOUBLE PROP(
+"units" "F/m^2*V"
+"description" "Body-bias dependence of `cdsc'"
+)
+"cdscd" FLOAT DOUBLE PROP(
+"units" "F/m^2*V"
+"description" "Drain-bias dependence of `cdsc'"
+)
+"nfactor" FLOAT DOUBLE PROP(
+"description" "Subthreshold swing coefficient"
+)
+"cit" FLOAT DOUBLE PROP(
+"units" "F/m^2"
+"description" "Interface trap parameter for subthreshold swing"
+)
+"voff" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Threshold voltage offset"
+)
+"dsub" FLOAT DOUBLE PROP(
+"description" "DIBL effect in subthreshold region"
+)
+"eta0" FLOAT DOUBLE PROP(
+"description" "DIBL coefficient subthreshold region"
+)
+"etab" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Body-bias dependence of `et0'"
+)
+"alpha0" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "Substrate current impact ionization coefficient"
+)
+"alpha1" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Substrate current impact ionization coefficient"
+)
+"beta0" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Substrate current impact ionization exponent"
+)
+"rsh" FLOAT DOUBLE PROP(
+"units" "Ohm/sqr"
+"description" "Source/drain diffusion sheet resistance"
+)
+"rs" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Source resistance"
+)
+"rd" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Drain resistance"
+)
+"lgcs" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Gate-to-contact length of source side"
+)
+"lgcd" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Gate-to-contact length of drain side"
+)
+"rsc" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Source contact resistance"
+)
+"rdc" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Drain contact resistance"
+)
+"rss" FLOAT DOUBLE PROP(
+"units" "Ohm*m"
+"description" "Scalable source resistance"
+)
+"rdd" FLOAT DOUBLE PROP(
+"units" "Ohm*m"
+"description" "Scalable drain resistance"
+)
+"sc" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Spacing between contacts"
+)
+"ldif" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Lateral diffusion beyond the gate"
+)
+"hdif" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Length of heavily doped diffusion"
+)
+"minr" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Minimum source/drain resistance"
+)
+"js" FLOAT DOUBLE PROP(
+"units" "A/m^2"
+"description" "Bulk junction reverse saturation current density"
+)
+"jsw" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Sidewall junction reverse saturation current density"
+)
+"jssw" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Alias of jsw"
+)
+"is" FLOAT DOUBLE PROP(
+"units" "A"
+"description" "Bulk junction reverse saturation current"
+)
+"n" FLOAT DOUBLE PROP(
+"description" "Junction emission coefficient"
+)
+"nj" FLOAT DOUBLE PROP(
+"description" "Junction emission coefficient"
+)
+"jtss" FLOAT DOUBLE PROP(
+"units" "A/m^2"
+"description" "Source bottom trap-assisted saturation current density"
+)
+"jtsd" FLOAT DOUBLE PROP(
+"units" "A/m^2"
+"description" "Drain bottom trap-assisted saturation current density"
+)
+"jtssws" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Source isolation-edge sidewall trap-assisted saturation current density"
+)
+"jtsswd" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Drain isolation-edge sidewall trap-assisted saturation current density"
+)
+"jtsswgs" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Source gate-edge sidewall trap-assisted saturation current density"
+)
+"jtsswgd" FLOAT DOUBLE PROP(
+"units" "A/m"
+"description" "Drain gate-edge sidewall trap-assisted saturation current density"
+)
+"njts" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for Jtss and Jtsd"
+)
+"njtssw" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for Jtssws and Jtsswd"
+)
+"njtsswg" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for Jtsswgs and Jtsswgd"
+)
+"njtsd" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for jtsd"
+)
+"njtsswd" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for jtsswd"
+)
+"njtsswgd" FLOAT DOUBLE PROP(
+"description" "Non-ideality factor for jtsswgd"
+)
+"xtss" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtss on temperature"
+)
+"xtsd" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtsd on temperature"
+)
+"xtssws" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtssws on temperature"
+)
+"xtsswd" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtsswd on temperature"
+)
+"xtsswgs" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtsswgs on temperature"
+)
+"xtsswgd" FLOAT DOUBLE PROP(
+"description" "Power dependence of  Jtsswgd on temperature"
+)
+"vtss" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Source bottom trap-assisted voltage dependent parameter"
+)
+"vtsd" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Drain bottom trap-assisted voltage dependent parameter"
+)
+"vtssws" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Source STI sidewall trap-assisted voltage dependent parameter"
+)
+"vtsswd" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Drain STI sidewall trap-assisted voltage dependent parameter"
+)
+"vtsswgs" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Source gate-edge sidewall trap-assisted voltage dependent parameter"
+)
+"vtsswgd" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Drain gate-edge sidewall trap-assisted voltage dependent parameter"
+)
+"tnjts" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for NJTS"
+)
+"tnjtssw" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for njtssw"
+)
+"tnjtsswg" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for njtsswg"
+)
+"tnjtsd" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for njtsd"
+)
+"tnjtsswd" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for njtsswd"
+)
+"tnjtsswgd" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for njtsswgd"
+)
+"jsswg" FLOAT DOUBLE PROP(
+"description" "Sidewall-gate junction reverse saturation current density"
+)
+"imelt" FLOAT DOUBLE PROP(
+"units" "A"
+"description" "Explosion current"
+)
+"ijth" FLOAT DOUBLE PROP(
+"units" "A"
+"description" "Alias to `imelt'"
+)
+"jmelt" FLOAT DOUBLE PROP(
+"units" "A/m^2"
+"description" "Explosion current density"
+)
+"vnds" FLOAT DOUBLE PROP(
+"description" "Reverse diode current transition point"
+)
+"nds" FLOAT DOUBLE PROP(
+"description" "Reverse bias slope coefficient"
+)
+"tt" FLOAT DOUBLE PROP(
+"units" "s"
+"description" "Transit time, spice compatible parameter"
+)
+"cgso" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Gate-source overlap capacitance"
+)
+"cgdo" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Gate-drain overlap capacitance"
+)
+"cgbo" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Gate-bulk overlap capacitance. The default value is 0 if version=3.0"
+)
+"meto" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Metal overlap in fringing field"
+)
+"cgsl" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Gate-source overlap capacitance in LDD region"
+)
+"cgdl" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Gate-drain overlap capacitance in LDD region"
+)
+"ckappa" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Overlap capacitance fitting parameter"
+)
+"cbs" FLOAT DOUBLE PROP(
+"units" "F"
+"description" "Bulk-source zero-bias junction capacitance"
+)
+"cbd" FLOAT DOUBLE PROP(
+"units" "F"
+"description" "Bulk-drain zero-bias junction capacitance"
+)
+"cj" FLOAT DOUBLE PROP(
+"units" "F/m^2"
+"description" "Zero-bias junction bottom capacitance density"
+)
+"mj" FLOAT DOUBLE PROP(
+"description" "Bulk junction bottom grading coefficient"
+)
+"pb" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Bulk junction built-in potential"
+)
+"fc" FLOAT DOUBLE PROP(
+"description" "Forward-bias depletion capacitance threshold"
+)
+"cjsw" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Zero-bias junction sidewall capacitance density"
+)
+"mjsw" FLOAT DOUBLE PROP(
+"description" "Bulk junction sidewall grading coefficient"
+)
+"pbsw" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Side-wall junction built-in potential"
+)
+"cjswg" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Zero-bias gate-side junction capacitance density"
+)
+"mjswg" FLOAT DOUBLE PROP(
+"description" "Gate-side junction grading coefficient"
+)
+"pbswg" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Gate-side junction built-in potential"
+)
+"fcsw" FLOAT DOUBLE PROP(
+"description" "Side-wall forward-bias depletion capacitance threshold"
+)
+"dwc" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Delta W for capacitance model"
+)
+"dlc" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Delta L for capacitance model"
+)
+"clc" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Intrinsic capacitance fitting parameter"
+)
+"cle" FLOAT DOUBLE PROP(
+"description" "Intrinsic capacitance fitting parameter"
+)
+"cf" FLOAT DOUBLE PROP(
+"units" "F/m"
+"description" "Fringe capacitance parameter"
+)
+"elm" FLOAT DOUBLE PROP(
+"description" "Elmore constant of the channel"
+)
+"vfbcv" FLOAT DOUBLE PROP(
+"description" "Flat-band voltage for capmod=0"
+)
+"acde" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "CV parameter"
+)
+"moin" FLOAT DOUBLE PROP(
+"description" "CV parameter"
+)
+"noff" FLOAT DOUBLE PROP(
+"description" "Transition parameter"
+)
+"voffcv" FLOAT DOUBLE PROP(
+"description" "Transition parameter"
+)
+"xpart" FLOAT DOUBLE PROP(
+"description" "Drain/source channel charge partition in saturation for BSIM charge model, use 0.0 for 40/60, 0.5 for 50/50, or 1.0 for 0/100"
+)
+"llc" FLOAT DOUBLE PROP(
+"units" "m^lln"
+"description" "Length dependence of delta L for CV"
+)
+"lwc" FLOAT DOUBLE PROP(
+"units" "m^lwn"
+"description" "Width dependence of delta L for CV"
+)
+"lwlc" FLOAT DOUBLE PROP(
+"units" "m^lwn+lln"
+"description" "Area dependence of delta L for CV"
+)
+"wlc" FLOAT DOUBLE PROP(
+"units" "m^wln"
+"description" "Length dependence of delta W for CV"
+)
+"wwc" FLOAT DOUBLE PROP(
+"units" "m^wwn"
+"description" "Width dependence of delta W for CV"
+)
+"wwlc" FLOAT DOUBLE PROP(
+"units" "m^wln+wwn"
+"description" "Area dependence of delta W for CV"
+)
+"wmlt" FLOAT DOUBLE PROP(
+"description" "Width shrink reduction factor"
+)
+"lmlt" FLOAT DOUBLE PROP(
+"description" "Length shrink reduction factor"
+)
+"w" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Default channel width"
+)
+"l" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Default channel length"
+)
+"as" FLOAT DOUBLE PROP(
+"units" "m^2"
+"description" "Default area of source diffusion"
+)
+"ad" FLOAT DOUBLE PROP(
+"units" "m^2"
+"description" "Default area of drain diffusion"
+)
+"ps" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Default perimeter of source diffusion"
+)
+"pd" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Default perimeter of drain diffusion"
+)
+"nrd" FLOAT DOUBLE PROP(
+"units" "m/m"
+"description" "Default number of squares of drain diffusion"
+)
+"nrs" FLOAT DOUBLE PROP(
+"units" "m/m"
+"description" "Default number of squares of source diffusion"
+)
+"version" FLOAT DOUBLE PROP(
+"description" "Model parameter \"version\" only accepts real number value, like 3.21 for version=3.2.1. The available versions are 3.1(3.1.0), 3.2(3.2.0), 3.21(3.2.1), 3.22(3.2.2), 3.23(3.2.3), 3.24(3.2.4) and 3.3(3.3.0)."
+)
+"tnom" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Parameters measurement temperature. Default set by `options'"
+)
+"trise" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Temperature rise from ambient"
+)
+"eg" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Energy band gap. Defaulted as 1.16 when spice compatible and 1.11 when tlev is 0 or 1 for spice"
+)
+"gap1" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Band gap temperature coefficient"
+)
+"gap2" FLOAT DOUBLE PROP(
+"units" "C"
+"description" "Band gap temperature offset"
+)
+"kt1" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Temperature coefficient for threshold voltage"
+)
+"kt1l" FLOAT DOUBLE PROP(
+"units" "v*m"
+"description" "Temperature coefficient for threshold voltage"
+)
+"kt2" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for threshold voltage"
+)
+"at" FLOAT DOUBLE PROP(
+"units" "m/s"
+"description" "Temperature coefficient for `vsat'"
+)
+"ua1" FLOAT DOUBLE PROP(
+"units" "m/v"
+"description" "Temperature coefficient for `ua'"
+)
+"ub1" FLOAT DOUBLE PROP(
+"units" "m^2/v^2"
+"description" "Temperature coefficient for `ub'"
+)
+"uc1" FLOAT DOUBLE PROP(
+"units" "m/v^2"
+"description" "Temperature coefficient for `uc'. Default is -0.056 for mobmod=3"
+)
+"prt" FLOAT DOUBLE PROP(
+"units" "Ohm"
+"description" "Temperature coefficient for Rds"
+)
+"trs" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Temperature parameter for source resistance"
+)
+"trd" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Temperature parameter for drain resistance"
+)
+"ute" FLOAT DOUBLE PROP(
+"description" "Mobility temperature exponent"
+)
+"xti" FLOAT DOUBLE PROP(
+"description" "Saturation current temperature exponent"
+)
+"pta" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Junction potential temperature coefficient"
+)
+"tpb" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Temperature coefficient for `pb'"
+)
+"ptp" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Sidewall junction potential temperature coefficient"
+)
+"tpbsw" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Temperature coefficient for `pbsw'"
+)
+"tpbswg" FLOAT DOUBLE PROP(
+"units" "V/C"
+"description" "Temperature coefficient for `pbswg'"
+)
+"cta" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Junction capacitance temperature coefficient"
+)
+"tcj" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Temperature coefficient for `cj'"
+)
+"ctp" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Sidewall junction capacitance temperature coefficient"
+)
+"tcjsw" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Temperature coefficient for `cjsw'"
+)
+"tcjswg" FLOAT DOUBLE PROP(
+"units" "1/C"
+"description" "Temperature coefficient for `cjswg'"
+)
+"kf" FLOAT DOUBLE PROP(
+"description" "Flicker (1/f) noise coefficient"
+)
+"af" FLOAT DOUBLE PROP(
+"description" "Flicker (1/f) noise exponent"
+)
+"ef" FLOAT DOUBLE PROP(
+"description" "Flicker (1/f) noise frequency exponent"
+)
+"noia" FLOAT DOUBLE PROP(
+"description" "Oxide trap density coefficient. Default is 9.9e18 for pmos"
+)
+"noib" FLOAT DOUBLE PROP(
+"description" "Oxide trap density coefficient. Default is 2.4e3 for pmos"
+)
+"noic" FLOAT DOUBLE PROP(
+"description" "Oxide trap density coefficient. Default is 1.4e-12 for pmos"
+)
+"noid" FLOAT DOUBLE PROP(
+"description" "flicker noise subthreshold-above threshold transition coefficient"
+)
+"wnoi" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Channel width at which noise parameters were extracted"
+)
+"em" FLOAT DOUBLE PROP(
+"units" "V/m"
+"description" "Maximum electric field"
+)
+"gamma" FLOAT DOUBLE PROP(
+"description" "Thermal noise coefficient"
+)
+"gdsnoi" FLOAT DOUBLE PROP(
+"description" "Channel thermal noise coefficient for 49 noise"
+)
+"lintnoi" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Lint offset for noise calculation"
+)
+"agidl" FLOAT DOUBLE PROP(
+"units" "1/Ohm"
+"description" "Pre-exponential coefficient for GIDL"
+)
+"bgidl" FLOAT DOUBLE PROP(
+"units" "V/m"
+"description" "Exponential coefficient for GIDL"
+)
+"cgidl" FLOAT DOUBLE PROP(
+"units" "V^3"
+"description" "Parameter for body-bias effect on GIDL"
+)
+"egidl" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Fitting parameter for band bending for GIDL"
+)
+"agisl" FLOAT DOUBLE PROP(
+"units" "1/Ohm"
+"description" "Pre-exponential coefficient for GISL"
+)
+"bgisl" FLOAT DOUBLE PROP(
+"units" "V/m"
+"description" "Exponential coefficient for GISL"
+)
+"cgisl" FLOAT DOUBLE PROP(
+"units" "V^3"
+"description" "Parameter for body-bias effect on GISL"
+)
+"egisl" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Fitting parameter for band bending for GISL"
+)
+"bforward" FLOAT DOUBLE PROP(
+"description" "Forward gate leakage current coefficient in pow()"
+)
+"breverse" FLOAT DOUBLE PROP(
+"description" "Reverse gate leakage current coefficient in pow()"
+)
+"cforward" FLOAT DOUBLE PROP(
+"description" "Forward gate leakage current coefficient in ()"
+)
+"creverse" FLOAT DOUBLE PROP(
+"description" "Reverse gate leakage current coefficient in ()"
+)
+"tcc" FLOAT DOUBLE PROP(
+"description" "Gate leakage current temperature coefficient"
+)
+"aigbinv" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/m"
+"description" "Parameter for Igb in inversion"
+)
+"bigbinv" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/(m*V)"
+"description" "Parameter for Igb in inversion"
+)
+"cigbinv" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Parameter for Igb in inversion"
+)
+"eigbinv" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Parameter for Igb in inversion"
+)
+"nigbinv" FLOAT DOUBLE PROP(
+"description" "Parameter for Igb in inversion"
+)
+"aigbacc" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/m"
+"description" "Parameter for Igb in accumulation"
+)
+"bigbacc" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/(m*V)"
+"description" "Parameter for Igb in accumulation"
+)
+"cigbacc" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Parameter for Igb in accumulation"
+)
+"nigbacc" FLOAT DOUBLE PROP(
+"description" "Parameter for Igb in accumulation"
+)
+"aigsd" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/m"
+"description" "Parameter for Igs and Igd"
+)
+"bigsd" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/(m*V)"
+"description" "Parameter for Igs and Igd"
+)
+"cigsd" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Parameter for Igs and Igd"
+)
+"aigc" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/m"
+"description" "Parameter for Igcs and Igcd"
+)
+"bigc" FLOAT DOUBLE PROP(
+"units" "sqrt(F/g)*s/(m*V)"
+"description" "Parameter for Igcs and Igcd"
+)
+"cigc" FLOAT DOUBLE PROP(
+"units" "1/V"
+"description" "Parameter for Igcs and Igcd"
+)
+"nigc" FLOAT DOUBLE PROP(
+"description" "Parameter for Igcs, Igcd ,Igs and Igd"
+)
+"pigcd" FLOAT DOUBLE PROP(
+"description" "Vds dependence of Igcs and Igcd"
+)
+"dlcig" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Source/drain overlap length for Igs and Igd"
+)
+"ntox" FLOAT DOUBLE PROP(
+"description" "Exponent for the gate oxide ratio"
+)
+"toxref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Nominal gate oxide thickness for gate dielectric tunneling current model only"
+)
+"poxedge" FLOAT DOUBLE PROP(
+"description" "Factor for the gate oxide thickness in source/drain overlap regions"
+)
+"wmax" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Maximum channel width for which the model is valid"
+)
+"wmin" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Minimum channel width for which the model is valid"
+)
+"lmax" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Maximum channel length for which the model is valid"
+)
+"lmin" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Minimum channel length for which the model is valid"
+)
+"imax" FLOAT DOUBLE PROP(
+"units" "A"
+"description" "Maximum allowable current"
+)
+"jmax" FLOAT DOUBLE PROP(
+"units" "A/m^2"
+"description" "Maximum allowable current density"
+)
+"bvj" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Junction reverse breakdown voltage"
+)
+"vbox" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Oxide breakdown voltage"
+)
+"vds_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross source and drain"
+)
+"vgd_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross gate and drain"
+)
+"vgs_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross gate and source/bulk"
+)
+"vbd_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross source/drain and bulk"
+)
+"vbs_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross source and bulk"
+)
+"vgb_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed voltage cross gate and bulk"
+)
+"vgdr_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed reverse voltage cross gate and drain"
+)
+"vgsr_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed reverse voltage cross gate and source"
+)
+"vgbr_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed reverse voltage cross gate and bulk"
+)
+"vbsr_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed reverse voltage cross bulk and source"
+)
+"vbdr_max" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Maximum allowed reverse voltage cross bulk and drain"
+)
+"lvtho" FLOAT DOUBLE PROP(
+"description" "Length dependence of Vth0"
+)
+"lvth0" FLOAT DOUBLE PROP(
+"description" "Alias of lvtho"
+)
+"lk1" FLOAT DOUBLE PROP(
+"description" "Length dependence of k1"
+)
+"lk2" FLOAT DOUBLE PROP(
+"description" "Length dependence of k2"
+)
+"lk3" FLOAT DOUBLE PROP(
+"description" "Length dependence of k3"
+)
+"lk3b" FLOAT DOUBLE PROP(
+"description" "Length dependence of k3b"
+)
+"lw0" FLOAT DOUBLE PROP(
+"description" "Length dependence of w0"
+)
+"lnlx" FLOAT DOUBLE PROP(
+"description" "Length dependence of nlx"
+)
+"lgamma1" FLOAT DOUBLE PROP(
+"description" "Length dependence of gamma1"
+)
+"lgamma2" FLOAT DOUBLE PROP(
+"description" "Length dependence of gamma2"
+)
+"lvbx" FLOAT DOUBLE PROP(
+"description" "Length dependence of vbx"
+)
+"lvbm" FLOAT DOUBLE PROP(
+"description" "Length dependence of vbm"
+)
+"ldvt0" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt0"
+)
+"ldvt1" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt1"
+)
+"ldvt2" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt2"
+)
+"ldvt0w" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt0w"
+)
+"ldvt1w" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt1w"
+)
+"ldvt2w" FLOAT DOUBLE PROP(
+"description" "Length dependence of dvt2w"
+)
+"la0" FLOAT DOUBLE PROP(
+"description" "Length dependence of a0"
+)
+"lb0" FLOAT DOUBLE PROP(
+"description" "Length dependence of b0"
+)
+"lb1" FLOAT DOUBLE PROP(
+"description" "Length dependence of b1"
+)
+"la1" FLOAT DOUBLE PROP(
+"description" "Length dependence of a1"
+)
+"la2" FLOAT DOUBLE PROP(
+"description" "Length dependence of a2"
+)
+"lags" FLOAT DOUBLE PROP(
+"description" "Length dependence of ags"
+)
+"lketa" FLOAT DOUBLE PROP(
+"description" "Length dependence of keta"
+)
+"lnsub" FLOAT DOUBLE PROP(
+"description" "Length dependence of nsub"
+)
+"lnch" FLOAT DOUBLE PROP(
+"description" "Length dependence of nch"
+)
+"lngate" FLOAT DOUBLE PROP(
+"description" "Length dependence of ngate"
+)
+"lxj" FLOAT DOUBLE PROP(
+"description" "Length dependence of xj"
+)
+"ldwg" FLOAT DOUBLE PROP(
+"description" "Length dependence of dwg"
+)
+"ldwb" FLOAT DOUBLE PROP(
+"description" "Length dependence of dwb"
+)
+"lxt" FLOAT DOUBLE PROP(
+"description" "Length dependence of xt"
+)
+"lrdsw" FLOAT DOUBLE PROP(
+"description" "Length dependence of rdsw"
+)
+"lprwb" FLOAT DOUBLE PROP(
+"description" "Length dependence of prwb"
+)
+"lprwg" FLOAT DOUBLE PROP(
+"description" "Length dependence of prwg"
+)
+"lwr" FLOAT DOUBLE PROP(
+"description" "Length dependence of wr"
+)
+"lu0" FLOAT DOUBLE PROP(
+"description" "Length dependence of u0"
+)
+"lvsat" FLOAT DOUBLE PROP(
+"description" "Length dependence of vsat"
+)
+"lua" FLOAT DOUBLE PROP(
+"description" "Length dependence of ua"
+)
+"lub" FLOAT DOUBLE PROP(
+"description" "Length dependence of ub"
+)
+"luc" FLOAT DOUBLE PROP(
+"description" "Length dependence of uc"
+)
+"ldrout" FLOAT DOUBLE PROP(
+"description" "Length dependence of drout"
+)
+"lpclm" FLOAT DOUBLE PROP(
+"description" "Length dependence of pclm"
+)
+"lpdiblc1" FLOAT DOUBLE PROP(
+"description" "Length dependence of pdiblc1"
+)
+"lpdiblc2" FLOAT DOUBLE PROP(
+"description" "Length dependence of pdiblc2"
+)
+"lpdiblcb" FLOAT DOUBLE PROP(
+"description" "Length dependence of pdiblcb"
+)
+"lpscbe1" FLOAT DOUBLE PROP(
+"description" "Length dependence of pscbe1"
+)
+"lpscbe2" FLOAT DOUBLE PROP(
+"description" "Length dependence of pscbe2"
+)
+"lpvag" FLOAT DOUBLE PROP(
+"description" "Length dependence of pvag"
+)
+"ldelta" FLOAT DOUBLE PROP(
+"description" "Length dependence of delta"
+)
+"lcdsc" FLOAT DOUBLE PROP(
+"description" "Length dependence of cdsc"
+)
+"lcdscb" FLOAT DOUBLE PROP(
+"description" "Length dependence of cdscb"
+)
+"lcdscd" FLOAT DOUBLE PROP(
+"description" "Length dependence of cdscd"
+)
+"lnfactor" FLOAT DOUBLE PROP(
+"description" "Length dependence of nfactor"
+)
+"lcit" FLOAT DOUBLE PROP(
+"description" "Length dependence of cit"
+)
+"lvoff" FLOAT DOUBLE PROP(
+"description" "Length dependence of voff"
+)
+"ldsub" FLOAT DOUBLE PROP(
+"description" "Length dependence of dsub"
+)
+"leta0" FLOAT DOUBLE PROP(
+"description" "Length dependence of eta0"
+)
+"letab" FLOAT DOUBLE PROP(
+"description" "Length dependence of etab"
+)
+"lalpha0" FLOAT DOUBLE PROP(
+"description" "Length dependence of alpha0"
+)
+"lalpha1" FLOAT DOUBLE PROP(
+"description" "Length dependence of alpha1"
+)
+"lbeta0" FLOAT DOUBLE PROP(
+"description" "Length dependence of beta0"
+)
+"lcgsl" FLOAT DOUBLE PROP(
+"description" "Length dependence of cgsl"
+)
+"lcgdl" FLOAT DOUBLE PROP(
+"description" "Length dependence of cgdl"
+)
+"lckappa" FLOAT DOUBLE PROP(
+"description" "Length dependence of ckappa"
+)
+"lclc" FLOAT DOUBLE PROP(
+"description" "Length dependence of clc"
+)
+"lcle" FLOAT DOUBLE PROP(
+"description" "Length dependence of cle"
+)
+"lcf" FLOAT DOUBLE PROP(
+"description" "Length dependence of cf"
+)
+"lelm" FLOAT DOUBLE PROP(
+"description" "Length dependence of elm"
+)
+"lvfbcv" FLOAT DOUBLE PROP(
+"description" "Length-dependence of vfbc"
+)
+"lvfb" FLOAT DOUBLE PROP(
+"description" "Length dependence of lvfb"
+)
+"lacde" FLOAT DOUBLE PROP(
+"description" "Length dependence of acde"
+)
+"lmoin" FLOAT DOUBLE PROP(
+"description" "Length dependence of moin"
+)
+"lnoff" FLOAT DOUBLE PROP(
+"description" "Length dependence of noff"
+)
+"lvoffcv" FLOAT DOUBLE PROP(
+"description" "Length dependence of voffcv"
+)
+"lkt1" FLOAT DOUBLE PROP(
+"description" "Length dependence of kt1"
+)
+"lkt1l" FLOAT DOUBLE PROP(
+"description" "Length dependence of kt1l"
+)
+"lkt2" FLOAT DOUBLE PROP(
+"description" "Length dependence of kt2"
+)
+"lat" FLOAT DOUBLE PROP(
+"description" "Length dependence of at"
+)
+"lua1" FLOAT DOUBLE PROP(
+"description" "Length dependence of ua1"
+)
+"lub1" FLOAT DOUBLE PROP(
+"description" "Length dependence of ub1"
+)
+"luc1" FLOAT DOUBLE PROP(
+"description" "Length dependence of uc1"
+)
+"lprt" FLOAT DOUBLE PROP(
+"description" "Length dependence of prt"
+)
+"lute" FLOAT DOUBLE PROP(
+"description" "Length dependence of ute"
+)
+"xl" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Length variation due to masking and etching"
+)
+"xlref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Length variation due to masking and etching"
+)
+"lagidl" FLOAT DOUBLE PROP(
+"description" "Length dependence of agidl"
+)
+"lbgidl" FLOAT DOUBLE PROP(
+"description" "Length dependence of bgidl"
+)
+"lcgidl" FLOAT DOUBLE PROP(
+"description" "Length dependence of cgidl"
+)
+"legidl" FLOAT DOUBLE PROP(
+"description" "Length dependence of egidl"
+)
+"wvtho" FLOAT DOUBLE PROP(
+"description" "Width dependence of Vth0"
+)
+"wvth0" FLOAT DOUBLE PROP(
+"description" "Alias of wvtho"
+)
+"wk1" FLOAT DOUBLE PROP(
+"description" "Width dependence of k1"
+)
+"wk2" FLOAT DOUBLE PROP(
+"description" "Width dependence of k2"
+)
+"wk3" FLOAT DOUBLE PROP(
+"description" "Width dependence of k3"
+)
+"wk3b" FLOAT DOUBLE PROP(
+"description" "Width dependence of k3b"
+)
+"ww0" FLOAT DOUBLE PROP(
+"description" "Width dependence of w0"
+)
+"wnlx" FLOAT DOUBLE PROP(
+"description" "Width dependence of nlx"
+)
+"wgamma1" FLOAT DOUBLE PROP(
+"description" "Width dependence of gamma1"
+)
+"wgamma2" FLOAT DOUBLE PROP(
+"description" "Width dependence of gamma2"
+)
+"wvbx" FLOAT DOUBLE PROP(
+"description" "Width dependence of vbx"
+)
+"wvbm" FLOAT DOUBLE PROP(
+"description" "Width dependence of vbm"
+)
+"wdvt0" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt0"
+)
+"wdvt1" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt1"
+)
+"wdvt2" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt2"
+)
+"wdvt0w" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt0"
+)
+"wdvt1w" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt1w"
+)
+"wdvt2w" FLOAT DOUBLE PROP(
+"description" "Width dependence of dvt2w"
+)
+"wa0" FLOAT DOUBLE PROP(
+"description" "Width dependence of a0"
+)
+"wb0" FLOAT DOUBLE PROP(
+"description" "Width dependence of b0"
+)
+"wb1" FLOAT DOUBLE PROP(
+"description" "Width dependence of b1"
+)
+"wa1" FLOAT DOUBLE PROP(
+"description" "Width dependence of a1"
+)
+"wa2" FLOAT DOUBLE PROP(
+"description" "Width dependence of a2"
+)
+"wags" FLOAT DOUBLE PROP(
+"description" "Width dependence of ags"
+)
+"wketa" FLOAT DOUBLE PROP(
+"description" "Width dependence of keta"
+)
+"wnsub" FLOAT DOUBLE PROP(
+"description" "Width dependence of nsub"
+)
+"wnch" FLOAT DOUBLE PROP(
+"description" "Width dependence of nch"
+)
+"wngate" FLOAT DOUBLE PROP(
+"description" "Width dependence of ngate"
+)
+"wxj" FLOAT DOUBLE PROP(
+"description" "Width dependence of xj"
+)
+"wdwg" FLOAT DOUBLE PROP(
+"description" "Width dependence of dwg"
+)
+"wdwb" FLOAT DOUBLE PROP(
+"description" "Width dependence of dwb"
+)
+"wxt" FLOAT DOUBLE PROP(
+"description" "Width dependence of xt"
+)
+"wrdsw" FLOAT DOUBLE PROP(
+"description" "Width dependence of rdsw"
+)
+"wprwb" FLOAT DOUBLE PROP(
+"description" "Width dependence of prwb"
+)
+"wprwg" FLOAT DOUBLE PROP(
+"description" "Width dependence of prwg"
+)
+"wwr" FLOAT DOUBLE PROP(
+"description" "Width dependence of wr"
+)
+"wu0" FLOAT DOUBLE PROP(
+"description" "Width dependence of u0"
+)
+"wvsat" FLOAT DOUBLE PROP(
+"description" "Width dependence of vsat"
+)
+"wua" FLOAT DOUBLE PROP(
+"description" "Width dependence of ua"
+)
+"wub" FLOAT DOUBLE PROP(
+"description" "Width dependence of ub"
+)
+"wuc" FLOAT DOUBLE PROP(
+"description" "Width dependence of uc"
+)
+"wdrout" FLOAT DOUBLE PROP(
+"description" "Width dependence of drout"
+)
+"wpclm" FLOAT DOUBLE PROP(
+"description" "Width dependence of pclm"
+)
+"wpdiblc1" FLOAT DOUBLE PROP(
+"description" "Width dependence of pdiblc1"
+)
+"wpdiblc2" FLOAT DOUBLE PROP(
+"description" "Width dependence of pdiblc2"
+)
+"wpdiblcb" FLOAT DOUBLE PROP(
+"description" "Width dependence of pdiblcb"
+)
+"wpscbe1" FLOAT DOUBLE PROP(
+"description" "Width dependence of pscbe1"
+)
+"wpscbe2" FLOAT DOUBLE PROP(
+"description" "Width dependence of pscbe2"
+)
+"wpvag" FLOAT DOUBLE PROP(
+"description" "Width dependence of pvag"
+)
+"wdelta" FLOAT DOUBLE PROP(
+"description" "Width dependence of delta"
+)
+"wcdsc" FLOAT DOUBLE PROP(
+"description" "Width dependence of cdsc"
+)
+"wcdscb" FLOAT DOUBLE PROP(
+"description" "Width dependence of cdscb"
+)
+"wcdscd" FLOAT DOUBLE PROP(
+"description" "Width dependence of cdscd"
+)
+"wnfactor" FLOAT DOUBLE PROP(
+"description" "Width dependence of nfactor"
+)
+"wcit" FLOAT DOUBLE PROP(
+"description" "Width dependence of cit"
+)
+"wvoff" FLOAT DOUBLE PROP(
+"description" "Width dependence of voff"
+)
+"wdsub" FLOAT DOUBLE PROP(
+"description" "Width dependence of dsub"
+)
+"weta0" FLOAT DOUBLE PROP(
+"description" "Width dependence of eta0"
+)
+"wetab" FLOAT DOUBLE PROP(
+"description" "Width dependence of etab"
+)
+"walpha0" FLOAT DOUBLE PROP(
+"description" "Width dependence of alpha0"
+)
+"walpha1" FLOAT DOUBLE PROP(
+"description" "Width dependence of alpha1"
+)
+"wbeta0" FLOAT DOUBLE PROP(
+"description" "Width dependence of beta0"
+)
+"wcgsl" FLOAT DOUBLE PROP(
+"description" "Width dependence of cgsl"
+)
+"wcgdl" FLOAT DOUBLE PROP(
+"description" "Width dependence of cgdl"
+)
+"wckappa" FLOAT DOUBLE PROP(
+"description" "Width dependence of ckappa"
+)
+"wclc" FLOAT DOUBLE PROP(
+"description" "Width dependence of clc"
+)
+"wcle" FLOAT DOUBLE PROP(
+"description" "Width dependence of cle"
+)
+"wcf" FLOAT DOUBLE PROP(
+"description" "Width dependence of cf"
+)
+"welm" FLOAT DOUBLE PROP(
+"description" "Width dependence of el"
+)
+"wvfbcv" FLOAT DOUBLE PROP(
+"description" "Width-dependence of vfbcv"
+)
+"wvfb" FLOAT DOUBLE PROP(
+"description" "Width dependence of lvfb"
+)
+"wacde" FLOAT DOUBLE PROP(
+"description" "Width dependence of acde"
+)
+"wmoin" FLOAT DOUBLE PROP(
+"description" "Width dependence of moin"
+)
+"wnoff" FLOAT DOUBLE PROP(
+"description" "Width dependence of noff"
+)
+"wvoffcv" FLOAT DOUBLE PROP(
+"description" "Width dependence of voffcv"
+)
+"wkt1" FLOAT DOUBLE PROP(
+"description" "Width dependence of kt1"
+)
+"wkt1l" FLOAT DOUBLE PROP(
+"description" "Width dependence of kt1l"
+)
+"wkt2" FLOAT DOUBLE PROP(
+"description" "Width dependence of kt2"
+)
+"wat" FLOAT DOUBLE PROP(
+"description" "Width dependence of at"
+)
+"wua1" FLOAT DOUBLE PROP(
+"description" "Width dependence of ua1"
+)
+"wub1" FLOAT DOUBLE PROP(
+"description" "Width dependence of ub1"
+)
+"wuc1" FLOAT DOUBLE PROP(
+"description" "Width dependence of uc1"
+)
+"wprt" FLOAT DOUBLE PROP(
+"description" "Width dependence of prt"
+)
+"wute" FLOAT DOUBLE PROP(
+"description" "Width dependence of ute"
+)
+"xw" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Width variation due to masking and etching"
+)
+"xwref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Width variation due to masking and etching"
+)
+"wagidl" FLOAT DOUBLE PROP(
+"description" "Width dependence of agidl"
+)
+"wbgidl" FLOAT DOUBLE PROP(
+"description" "Width dependence of bgidl"
+)
+"wcgidl" FLOAT DOUBLE PROP(
+"description" "Width dependence of cgidl"
+)
+"wegidl" FLOAT DOUBLE PROP(
+"description" "Width dependence of egidl"
+)
+"pvtho" FLOAT DOUBLE PROP(
+"description" "Product dependence of Vth0"
+)
+"pvth0" FLOAT DOUBLE PROP(
+"description" "Alias of pvtho"
+)
+"pk1" FLOAT DOUBLE PROP(
+"description" "Product dependence of k1"
+)
+"pk2" FLOAT DOUBLE PROP(
+"description" "Product dependence of k2"
+)
+"pk3" FLOAT DOUBLE PROP(
+"description" "Product dependence of k3"
+)
+"pk3b" FLOAT DOUBLE PROP(
+"description" "Product dependence of k3b"
+)
+"pw0" FLOAT DOUBLE PROP(
+"description" "Product dependence of w0"
+)
+"pnlx" FLOAT DOUBLE PROP(
+"description" "Product dependence of nlx"
+)
+"pgamma1" FLOAT DOUBLE PROP(
+"description" "Product dependence of gamma1"
+)
+"pgamma2" FLOAT DOUBLE PROP(
+"description" "Product dependence of gamma2"
+)
+"pvbx" FLOAT DOUBLE PROP(
+"description" "Product dependence of vbx"
+)
+"pvbm" FLOAT DOUBLE PROP(
+"description" "Product dependence of vbm"
+)
+"pdvt0" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt0"
+)
+"pdvt1" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt1"
+)
+"pdvt2" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt2"
+)
+"pdvt0w" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt0w"
+)
+"pdvt1w" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt1w"
+)
+"pdvt2w" FLOAT DOUBLE PROP(
+"description" "Product dependence of dvt2w"
+)
+"pa0" FLOAT DOUBLE PROP(
+"description" "Product dependence of a0"
+)
+"pb0" FLOAT DOUBLE PROP(
+"description" "Product dependence of b0"
+)
+"pb1" FLOAT DOUBLE PROP(
+"description" "Product dependence of b1"
+)
+"pa1" FLOAT DOUBLE PROP(
+"description" "Product dependence of a1"
+)
+"pa2" FLOAT DOUBLE PROP(
+"description" "Product dependence of a2"
+)
+"pags" FLOAT DOUBLE PROP(
+"description" "Product dependence of ags"
+)
+"pketa" FLOAT DOUBLE PROP(
+"description" "Product dependence of keta"
+)
+"pnsub" FLOAT DOUBLE PROP(
+"description" "Product dependence of nsub"
+)
+"pnch" FLOAT DOUBLE PROP(
+"description" "Product dependence of nch"
+)
+"pngate" FLOAT DOUBLE PROP(
+"description" "Product dependence of ngate"
+)
+"pxj" FLOAT DOUBLE PROP(
+"description" "Product dependence of xj"
+)
+"pdwg" FLOAT DOUBLE PROP(
+"description" "Product dependence of dwg"
+)
+"pdwb" FLOAT DOUBLE PROP(
+"description" "Product dependence of dwb"
+)
+"pxt" FLOAT DOUBLE PROP(
+"description" "Product dependence of xt"
+)
+"prdsw" FLOAT DOUBLE PROP(
+"description" "Product dependence of rdsw"
+)
+"pprwb" FLOAT DOUBLE PROP(
+"description" "Product dependence of prwb"
+)
+"pprwg" FLOAT DOUBLE PROP(
+"description" "Product dependence of prwg"
+)
+"pwr" FLOAT DOUBLE PROP(
+"description" "Product dependence of wr"
+)
+"pu0" FLOAT DOUBLE PROP(
+"description" "Product dependence of u0"
+)
+"pvsat" FLOAT DOUBLE PROP(
+"description" "Product dependence of vsat"
+)
+"pua" FLOAT DOUBLE PROP(
+"description" "Product dependence of ua"
+)
+"pub" FLOAT DOUBLE PROP(
+"description" "Product dependence of ub"
+)
+"puc" FLOAT DOUBLE PROP(
+"description" "Product dependence of uc"
+)
+"pdrout" FLOAT DOUBLE PROP(
+"description" "Product dependence of drout"
+)
+"ppclm" FLOAT DOUBLE PROP(
+"description" "Product dependence of pclm"
+)
+"ppdiblc1" FLOAT DOUBLE PROP(
+"description" "Product dependence of pdiblc1"
+)
+"ppdiblc2" FLOAT DOUBLE PROP(
+"description" "Product dependence of pdiblc2"
+)
+"ppdiblcb" FLOAT DOUBLE PROP(
+"description" "Product dependence of pdiblcb"
+)
+"ppscbe1" FLOAT DOUBLE PROP(
+"description" "Product dependence of pscbe1"
+)
+"ppscbe2" FLOAT DOUBLE PROP(
+"description" "Product dependence of pscbe2"
+)
+"ppvag" FLOAT DOUBLE PROP(
+"description" "Product dependence of pvag"
+)
+"pdelta" FLOAT DOUBLE PROP(
+"description" "Product dependence of delta"
+)
+"pcdsc" FLOAT DOUBLE PROP(
+"description" "Product dependence of cdsc"
+)
+"pcdscb" FLOAT DOUBLE PROP(
+"description" "Product dependence of cdscb"
+)
+"pcdscd" FLOAT DOUBLE PROP(
+"description" "Product dependence of cdscd"
+)
+"pnfactor" FLOAT DOUBLE PROP(
+"description" "Product dependence of nfactor"
+)
+"pcit" FLOAT DOUBLE PROP(
+"description" "Product dependence of cit"
+)
+"pvoff" FLOAT DOUBLE PROP(
+"description" "Product dependence of voff"
+)
+"pdsub" FLOAT DOUBLE PROP(
+"description" "Product dependence of dsub"
+)
+"peta0" FLOAT DOUBLE PROP(
+"description" "Product dependence of eta0"
+)
+"petab" FLOAT DOUBLE PROP(
+"description" "Product dependence of etab"
+)
+"palpha0" FLOAT DOUBLE PROP(
+"description" "Product dependence of alpha0"
+)
+"palpha1" FLOAT DOUBLE PROP(
+"description" "Product dependence of alpha1"
+)
+"pbeta0" FLOAT DOUBLE PROP(
+"description" "Product dependence of beta0"
+)
+"pcgsl" FLOAT DOUBLE PROP(
+"description" "Product dependence of cgsl"
+)
+"pcgdl" FLOAT DOUBLE PROP(
+"description" "Product dependence of cgdl"
+)
+"pckappa" FLOAT DOUBLE PROP(
+"description" "Product dependence of ckappa"
+)
+"pclc" FLOAT DOUBLE PROP(
+"description" "Product dependence of clc"
+)
+"pcle" FLOAT DOUBLE PROP(
+"description" "Product dependence of cle"
+)
+"pcf" FLOAT DOUBLE PROP(
+"description" "Product dependence of cf"
+)
+"pelm" FLOAT DOUBLE PROP(
+"description" "Product dependence of elm"
+)
+"pvfbcv" FLOAT DOUBLE PROP(
+"description" "Product dependence of vfbcv"
+)
+"pvfb" FLOAT DOUBLE PROP(
+"description" "Product dependence of lvfb"
+)
+"pacde" FLOAT DOUBLE PROP(
+"description" "Product dependence of acde"
+)
+"pmoin" FLOAT DOUBLE PROP(
+"description" "Product dependence of moin"
+)
+"pnoff" FLOAT DOUBLE PROP(
+"description" "Product dependence of noff"
+)
+"pvoffcv" FLOAT DOUBLE PROP(
+"description" "Product dependence of voffcv"
+)
+"pkt1" FLOAT DOUBLE PROP(
+"description" "Product dependence of kt1"
+)
+"pkt1l" FLOAT DOUBLE PROP(
+"description" "Product dependence of kt1l"
+)
+"pkt2" FLOAT DOUBLE PROP(
+"description" "Product dependence of kt2"
+)
+"pat" FLOAT DOUBLE PROP(
+"description" "Product dependence of at"
+)
+"pua1" FLOAT DOUBLE PROP(
+"description" "Product dependence of ua1"
+)
+"pub1" FLOAT DOUBLE PROP(
+"description" "Product dependence of ub1"
+)
+"puc1" FLOAT DOUBLE PROP(
+"description" "Product dependence of uc1"
+)
+"pprt" FLOAT DOUBLE PROP(
+"description" "Product dependence of prt"
+)
+"pute" FLOAT DOUBLE PROP(
+"description" "Product dependence of ute"
+)
+"pagidl" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of agidl"
+)
+"pbgidl" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of bgidl"
+)
+"pcgidl" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of cgidl"
+)
+"pegidl" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of egidl"
+)
+"mvtwl" FLOAT DOUBLE PROP(
+"units" "v*m"
+"description" "Threshold mismatch area dependence"
+)
+"mvtwl2" FLOAT DOUBLE PROP(
+"units" "v*m^1.5"
+"description" "Threshold mismatch area square dependence"
+)
+"mvt0" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Threshold mismatch intercept"
+)
+"mbewl" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Beta mismatch area dependence"
+)
+"mbe0" FLOAT DOUBLE PROP(
+"description" "Beta mismatch intercept"
+)
+"mismatchdist" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Mismatch Distance"
+)
+"sa0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "reference distance between od edge to poly of one side"
+)
+"saref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Alias to Sa0"
+)
+"sb0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "reference distance between od edge to poly of the other side"
+)
+"sbref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "Alias to sb0"
+)
+"wlod" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "length parameter for stress effect"
+)
+"ku0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "mobility degradation/enhancement coefficient for stress effect"
+)
+"kvsat" FLOAT DOUBLE PROP(
+"description" "saturation velocity degradation/enhancement parameter for stress effect"
+)
+"kvth0" FLOAT DOUBLE PROP(
+"units" "v*m"
+"description" "threshold shift parameter for stress effect"
+)
+"tku0" FLOAT DOUBLE PROP(
+"description" "temperature coefficient of ku0"
+)
+"llodku0" FLOAT DOUBLE PROP(
+"description" "length parameter for u0 stress effect"
+)
+"wlodku0" FLOAT DOUBLE PROP(
+"description" "width parameter for u0 stress effect"
+)
+"llodvth" FLOAT DOUBLE PROP(
+"description" "length parameter for vth stress effect"
+)
+"wlodvth" FLOAT DOUBLE PROP(
+"description" "width parameter for vth stress effect"
+)
+"lku0" FLOAT DOUBLE PROP(
+"units" "m^llodku0"
+"description" "length dependence of ku0"
+)
+"wku0" FLOAT DOUBLE PROP(
+"units" "m^wlodku0"
+"description" "width dependence of ku0"
+)
+"pku0" FLOAT DOUBLE PROP(
+"units" "m^(llodku0+wlodku0)"
+"description" "cross-term dependence of ku0"
+)
+"lkvth0" FLOAT DOUBLE PROP(
+"units" "v*m^llodku0"
+"description" "length dependence of kvth0"
+)
+"wkvth0" FLOAT DOUBLE PROP(
+"units" "v*m^wlodku0"
+"description" "width dependence of kvth0"
+)
+"pkvth0" FLOAT DOUBLE PROP(
+"units" "v*m^(llodku0+wlodku0)"
+"description" "cross-term dependence of kvth0"
+)
+"stk2" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "k2 shift factor related to vth0 change"
+)
+"lodk2" FLOAT DOUBLE PROP(
+"description" "k2 shift modification factor for stress effect"
+)
+"steta0" FLOAT DOUBLE PROP(
+"units" "m"
+"description" "eta0 shift factor related to vth0 change"
+)
+"lodeta0" FLOAT DOUBLE PROP(
+"description" "eta0 shift modification factor for stress effect"
+)
+"web" FLOAT DOUBLE PROP(
+"description" "Coefficient for SCB"
+)
+"wec" FLOAT DOUBLE PROP(
+"description" "Coefficient for SCC"
+)
+"kvth0we" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Threshold shift factor for well proximity effect "
+)
+"k2we" FLOAT DOUBLE PROP(
+"description" "K2 shift factor for well proximity effect"
+)
+"lkvth0we" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Length dependence of kvth0we"
+)
+"wkvth0we" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Width dependence of kvth0we "
+)
+"pkvth0we" FLOAT DOUBLE PROP(
+"units" "V"
+"description" "Cross-term dependence of kvth0we "
+)
+"lk2we" FLOAT DOUBLE PROP(
+"description" "Length dependence of k2we"
+)
+"wk2we" FLOAT DOUBLE PROP(
+"description" "Width dependence of k2we"
+)
+"pk2we" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of k2we"
+)
+"ku0we" FLOAT DOUBLE PROP(
+"description" " Mobility degradation factor for well proximity effect "
+)
+"lku0we" FLOAT DOUBLE PROP(
+"description" "Length dependence of ku0we"
+)
+"wku0we" FLOAT DOUBLE PROP(
+"description" "Width dependence of ku0we"
+)
+"pku0we" FLOAT DOUBLE PROP(
+"description" "Cross-term dependence of ku0we"
+)
+"scref" FLOAT DOUBLE PROP(
+"units" "m"
+"description" " Reference distance to calculate SCA, SCB and SCC "
+)
+"mnr" FLOAT DOUBLE PROP(
+"description" "Fitting parameter for resistance induced non-ideality factor"
+)
+"bnr" FLOAT DOUBLE PROP(
+"description" "Fitting parameter for resistance induced non-ideality factor"
+)
+"cnr" FLOAT DOUBLE PROP(
+"units" "1/v*m"
+"description" "Fitting parameter for resistance induced non-ideality factor"
+)
+"dnr" FLOAT DOUBLE PROP(
+"units" "1/v"
+"description" "Fitting parameter for resistance induced non-ideality factor"
+)
+"tmnr" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for mnr"
+)
+"tcnr" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for cnr"
+)
+"tdnr" FLOAT DOUBLE PROP(
+"description" "Temperature coefficient for dnr"
+)
+"xjbv" FLOAT DOUBLE PROP(
+"description" "Fitting parameter for diodes breakdown"
+)
+"ijthrev" FLOAT DOUBLE PROP(
+"description" "Reverse maximum allowable current"
+)
+"nrfwd" FLOAT DOUBLE PROP(
+"description" "Nominal value of Nr for forward linearization"
+)
+"shrink" FLOAT DOUBLE PROP(
+"description" "linear shrink parameter"
+)
+"shrink2" FLOAT DOUBLE PROP(
+"description" "area shrink parameter"
+)
+"vfbflag" INT LONG PROP(
+"description" "49 Vfb selector"
+)
+"binunit" INT LONG PROP(
+"description" "Bin parameter unit selector. 1 for microns and 2 for meters"
+)
+"mobmod" INT LONG PROP(
+"description" "Mobility model selector"
+)
+"capmod" INT LONG PROP(
+"description" "Intrinsic charge model"
+)
+"nqsmod" INT LONG PROP(
+"description" "Non-quasi static model selector. Set to 1 to turn on nqs"
+)
+"acnqsmod" INT LONG PROP(
+"description" "AC Non-quasi static model selector. Set to 1 to turn on nqs"
+)
+"paramchk" INT LONG PROP(
+"description" "Model parameter checking selector"
+)
+"fullreinit" INT LONG PROP(
+"description" "Model parameter full reinit selector"
+)
+"level" INT LONG PROP(
+"description" "BSIM3v3 model selector. The available level are 11, 49 and 53"
+)
+"acm" INT LONG PROP(
+"description" "BSIM3v3 area calculation method selector"
+)
+"geo" INT LONG PROP(
+"description" "geometry selector"
+)
+"calcacm" INT LONG PROP(
+"description" "49 geometry factor"
+)
+"tlev" INT LONG PROP(
+"description" "DC temperature selector"
+)
+"tlevc" INT LONG PROP(
+"description" "AC temperature selector"
+)
+"eglev" INT LONG PROP(
+"description" "DC temperature selector"
+)
+"diomod" INT LONG PROP(
+"description" "a flag to select junction model. diomod=1 junction model described in Common MOSFET Equations section will be used. diomod=0 Berkeley junction model is used. diomod=100 TSMC special diode model"
+)
+"noimod" INT LONG PROP(
+"description" "Noise model selector"
+)
+"flkmod" INT LONG PROP(
+"description" "Flicker noise model (0 for Ids based model, 1 for gm based model)"
+)
+"nlev" INT LONG PROP(
+"description" "49 noise selector"
+)
+"igcmod" INT LONG PROP(
+"description" "Gate-to-channel and gate-to-source, gate-to-drain tunneling model selector"
+)
+"igbmod" INT LONG PROP(
+"description" "Gate-to-substrate tunneling model selector"
+)
+"apwarn" INT LONG PROP(
+"description" "Warning message flag"
+)
+"mismatchmod" INT LONG PROP(
+"description" "select Mismatch mode. The available modes are 0, 1, 2 and 3"
+)
+"stimod" INT LONG PROP(
+"description" "LOD stress effect model selector. 0 for no LOD, 1 for UCB LOD, 2 for TSMC LOD"
+)
+"wpemod" INT LONG PROP(
+"description" " Flag for WPE model (WPEMOD=1 to activate this model) "
+)
+"type" INT BYTE PROP(
+"description" "Transistor type"
+)
+"vthmod" INT BYTE PROP(
+"description" "Vth output selector. 'std' outputs model equation Vth. 'vthcc' outputs constant current Vth, and may impact simulation performance. The default value is taken from the options parameter 'vthmod'"
+)
+"dskip" INT BYTE PROP(
+"description" "Use simple piece-wise linear model for diode currents below 0.1*`iabstol'"
+)
+"alarm" INT BYTE PROP(
+"description" "Forbidden operating region"
+)
+"warn" INT BYTE PROP(
+"description" "Parameter to turn warnings on and off"
+)
+"msgskip" INT BYTE PROP(
+"description" "Skip some warning message customer requested"
+)
+"compatible" INT BYTE PROP(
+"description" "Encourage device equations to be compatible with a foreign simulator. This option does not affect input syntax"
+)
+) PROP(
+"key" "model"
+)
+VALUE
+"MP1.pshort.7" "bsim3v3" (
+-3.015799900000000e-01
+-1.089796500000000e+00
+4.569000000000000e-01
+-7.591930299999999e-02
+3.522000000000000e+00
+1.889000000000000e+00
+1.000000000000000e-08
+5.256000000000000e-08
+nan
+nan
+nan
+-3.000000000000000e+00
+5.500000000000000e-01
+2.900000000000000e-01
+-7.006000000000000e-02
+8.599999999999999e-02
+3.414000000000000e+05
+7.600000000000000e-02
+4.193113700000000e-01
+5.828000000000000e-06
+1.311000000000000e-05
+0.000000000000000e+00
+9.900000000000000e-01
+2.042812900000000e+00
+-3.335090100000000e-02
+nan
+nan
+nan
+nan
+6.000000000000000e+16
+8.085000000000000e+17
+1.000000000000000e+30
+1.500000000000000e-07
+6.314000000000000e-09
+-1.453000000000000e-08
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+-3.680000000000000e-09
+0.000000000000000e+00
+3.200010000000000e-09
+0.000000000000000e+00
+3.000000000000000e-09
+3.200010000000000e-09
+1.550000000000000e-07
+3.474000000000000e+02
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+20
+1.000000000000000e+20
+9.218806100000001e-03
+2.980701800000000e+05
+7.049995299999999e-11
+2.470396400000000e-18
+-1.649000000000000e-11
+3.540000000000000e-01
+1.840845300000000e+00
+4.588000000000000e-02
+1.128812900000000e-02
+1.964000000000000e-01
+9.731000000000000e+08
+9.999999999999999e-21
+7.980000000000000e-01
+9.631000000000001e-03
+1.000000000000000e-03
+-9.999996000000000e-05
+2.130337200000000e-04
+4.881000000000000e-01
+1.043000000000000e-03
+-1.070000000000000e-01
+3.540000000000000e-01
+9.286495200000000e-02
+-2.665661300000000e-02
+1.576000000000000e-06
+3.470000000000000e+00
+2.110000000000000e+01
+2.100000000000000e+02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-05
+2.170000000000000e-05
+1.000000000000000e-12
+1.000000000000000e-12
+nan
+1.195800000000000e+00
+1.195800000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+08
+-1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+4.071990000000000e-10
+4.071990000000000e-10
+1.000000000000000e-10
+0.000000000000000e+00
+7.308700000000000e-11
+7.308700000000000e-11
+6.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+1.047620442000000e-03
+4.776000000000000e-01
+9.192000000000000e-01
+5.000000000000000e-01
+6.066308560199999e-11
+3.652000000000000e-01
+1.119000000000000e+00
+2.425772991600000e-10
+8.299000000000000e-01
+1.415000000000000e+00
+5.000000000000000e-01
+-1.453000000000000e-08
+2.822000000000000e-08
+1.000000000000000e-07
+6.000000000000000e-01
+1.080000000000000e-11
+5.000000000000000e+00
+-1.485000000000000e+00
+1.036000000000000e+00
+2.173000000000000e+01
+3.473000000000000e+00
+-1.158000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+5.000000000000000e-06
+5.000000000000000e-06
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.200000000000000e+00
+3.000000000000000e+01
+0.000000000000000e+00
+1.160000000000000e+00
+7.020000000000000e-04
+1.108000000000000e+03
+-2.050485900000000e-01
+-1.420000000000000e-09
+-1.738000000000000e-02
+3.236000000000000e+04
+7.847352500000000e-10
+-1.387746500000000e-18
+-1.034000000000000e-10
+-5.282000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+-8.464780300000000e-01
+5.200000000000000e+00
+1.000000000000000e-03
+1.000000000000000e-03
+1.750000000000000e-03
+1.750000000000000e-03
+1.750000000000000e-03
+8.600000000000000e-04
+8.600000000000000e-04
+5.000000000000000e-04
+5.000000000000000e-04
+5.000000000000000e-04
+0.000000000000000e+00
+1.000000000000000e+00
+8.340000000000000e-01
+7.755668600000000e+18
+3.913300000000000e+05
+1.722900000000000e-11
+2.000000000000000e+14
+1.000000000000000e-05
+4.100000000000000e+07
+6.666666666666666e-01
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.300000000000000e+09
+5.000000000000000e-01
+8.000000000000000e-01
+0.000000000000000e+00
+2.300000000000000e+09
+5.000000000000000e-01
+8.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.110000000000000e-02
+9.490000000000000e-04
+6.000000000000000e-03
+1.100000000000000e+00
+3.000000000000000e+00
+1.360000000000000e-02
+1.710000000000000e-03
+7.500000000000000e-02
+1.000000000000000e+00
+4.900000000000001e-03
+7.590000000000000e-04
+3.000000000000000e-02
+6.100000000000000e-03
+7.590000000000000e-04
+3.000000000000000e-02
+1.000000000000000e+00
+1.000000000000000e+00
+6.314000000000000e-09
+1.000000000000000e+00
+3.000000000000000e-09
+1.000000000000000e+00
+4.200000000000000e-07
+2.800000000000000e-07
+6.000000000000000e-07
+1.200000000000000e-07
+1.000000000000000e+00
+1.000000000000000e+08
+inf
+9.600030000000000e+00
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+-2.435693200000000e-09
+-2.435693200000000e-09
+0.000000000000000e+00
+1.626610900000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.461891500000000e-08
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.309844900000000e-07
+1.968225500000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.332195700000000e-10
+-1.202360900000000e-02
+1.242294500000000e-17
+-3.604876600000000e-26
+0.000000000000000e+00
+0.000000000000000e+00
+-5.570945400000000e-08
+0.000000000000000e+00
+-1.114320500000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+5.022310500000000e-10
+-1.717115500000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.616099700000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+4.795743100000000e-18
+-6.241035500000000e-26
+0.000000000000000e+00
+0.000000000000000e+00
+6.976820800000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.286901800000000e-08
+1.286901800000000e-08
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-3.396637300000000e-08
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.397042100000000e-11
+-1.144244000000000e-02
+0.000000000000000e+00
+-2.380388000000000e-25
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.594402000000000e-09
+-1.312776100000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.512566700000000e-16
+6.512566700000000e-16
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.647037400000000e-15
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-8.205834100000001e-18
+6.720968900000000e-09
+0.000000000000000e+00
+3.034856100000000e-32
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-9.365071000000000e-16
+7.710879000000000e-16
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-06
+1.000000000000000e-06
+1.000000000000000e-06
+1.000000000000000e-06
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-06
+2.100000000000000e+01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e-01
+1.000000000000000e+00
+nan
+nan
+0
+2
+1
+3
+0
+0
+0
+0
+49
+12
+0
+0
+0
+0
+0
+1
+3
+0
+2
+1
+1
+0
+0
+2147483647
+0
+1
+-1
+1
+0
+1
+0
+0
+) PROP(
+"parent model" "MP1.pshort"
+)
+"MN1.nshort.7" "bsim3v3" (
+4.228957400000000e-01
+-6.227583000000000e-01
+2.347000000000000e-01
+-3.233131800000000e-02
+-7.200000000000002e-01
+1.300000000000000e+00
+8.999000000000000e-08
+-1.300000000000000e-08
+nan
+nan
+nan
+-3.000000000000000e+00
+-5.531999999999999e-01
+3.960000000000000e-01
+5.775000000000000e-01
+-1.280000000000001e-02
+9.260000000000000e+05
+3.100000000000000e-01
+1.704000000000000e+00
+-1.004264960000000e-07
+-1.000000000000000e-07
+0.000000000000000e+00
+9.900000000000000e-01
+5.707000000000000e-01
+2.010000000000000e-02
+nan
+nan
+nan
+nan
+6.000000000000000e+16
+2.010000000000000e+17
+1.000000000000000e+30
+1.500000000000000e-07
+1.937000000000000e-09
+1.030000000000000e-08
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+-2.849000000000000e-09
+0.000000000000000e+00
+2.774750000000000e-09
+0.000000000000000e+00
+2.750000000000000e-09
+2.774750000000000e-09
+1.550000000000000e-07
+1.337800000000000e+02
+-1.080000000000000e-02
+3.980000000000000e-01
+1.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+20
+1.000000000000000e+20
+3.165969900000000e-02
+2.021619200000000e+05
+-2.061031800000000e-10
+1.149874000000000e-18
+2.930000000000000e-11
+0.000000000000000e+00
+2.703000000000000e-01
+0.000000000000000e+00
+9.840000000000000e-02
+8.169999999999999e-01
+2.304000000000000e+08
+1.000000000000000e-06
+0.000000000000000e+00
+1.074836800000000e-03
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.264000000000000e+00
+-1.850000000000000e-03
+-2.023000000000000e-01
+1.802736100000000e-02
+-1.024020200000000e-03
+-1.153150900000000e-02
+1.920000000000000e-09
+6.654000000000000e-05
+7.081000000000000e+00
+1.120000000000000e+02
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-05
+7.750000000000000e-06
+4.911000000000000e-12
+4.911000000000000e-12
+nan
+1.077300000000000e+00
+1.077300000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e+01
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+2.000000000000000e-02
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+1.000000000000000e+01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+08
+-1.000000000000000e+00
+1.000000000000000e+00
+0.000000000000000e+00
+3.607380000000000e-10
+3.607380000000000e-10
+1.000000000000000e-13
+0.000000000000000e+00
+2.190300000000000e-11
+2.190300000000000e-11
+1.000000000000000e-02
+0.000000000000000e+00
+0.000000000000000e+00
+1.313655037200000e-03
+4.846000000000000e-01
+1.306000000000000e+00
+5.000000000000000e-01
+6.265231433999999e-12
+8.037000000000000e-02
+9.203000000000000e-01
+6.275331215999998e-11
+5.658000000000000e-01
+4.870000000000000e-01
+5.000000000000000e-01
+0.000000000000000e+00
+3.098000000000000e-08
+1.140000000000000e-07
+3.623400000000000e-01
+9.226000000000000e-11
+1.500000000000000e+00
+-8.885676000000000e-01
+6.500000000000000e-01
+2.250000000000000e+01
+1.950000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e+00
+5.000000000000000e-06
+5.000000000000000e-06
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.200000000000000e+00
+3.000000000000000e+01
+0.000000000000000e+00
+1.160000000000000e+00
+7.020000000000000e-04
+1.108000000000000e+03
+-1.026145600000000e-01
+0.000000000000000e+00
+-8.453298099999999e-03
+1.767125400000000e+04
+-1.728229100000000e-10
+2.279755700000000e-20
+6.827000000000000e-11
+1.240000000000000e+01
+0.000000000000000e+00
+0.000000000000000e+00
+-1.328022400000000e+00
+5.200000000000000e+00
+1.940000000000000e-03
+1.940000000000000e-03
+5.000000000000000e-03
+5.000000000000000e-03
+1.750000000000000e-03
+6.872000000000000e-04
+6.872000000000000e-04
+2.399000000000000e-03
+2.399000000000000e-03
+5.000000000000000e-04
+0.000000000000000e+00
+1.000000000000000e+00
+8.796235000000000e-01
+1.258925400000000e+18
+1.065370500000000e+05
+-4.800000000000000e-13
+2.000000000000000e+14
+1.000000000000000e-05
+4.100000000000000e+07
+6.666666666666666e-01
+1.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+2.300000000000000e+09
+5.000000000000000e-01
+8.000000000000000e-01
+0.000000000000000e+00
+2.300000000000000e+09
+5.000000000000000e-01
+8.000000000000000e-01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.110000000000000e-02
+9.490000000000000e-04
+6.000000000000000e-03
+1.100000000000000e+00
+3.000000000000000e+00
+1.360000000000000e-02
+1.710000000000000e-03
+7.500000000000000e-02
+1.000000000000000e+00
+1.035000000000000e-02
+1.710000000000000e-03
+7.500000000000000e-02
+1.050000000000000e-02
+1.710000000000000e-03
+7.500000000000000e-02
+1.000000000000000e+00
+1.000000000000000e+00
+1.937000000000000e-09
+1.000000000000000e+00
+3.000000000000000e-09
+1.000000000000000e+00
+1.500000000000000e-06
+4.200000000000000e-07
+3.500000000000000e-07
+2.000000000000000e-07
+1.000000000000000e+00
+1.000000000000000e+08
+inf
+8.324250000000001e+00
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+nan
+-1.674775400000000e-08
+-1.674775400000000e-08
+0.000000000000000e+00
+7.067158700000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.107523100000000e-30
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+6.585716500000000e-10
+-1.609619100000000e-02
+-1.258450200000000e-17
+-3.384797100000000e-26
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.814565800000000e-26
+2.008369800000000e-10
+1.134103600000000e-27
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.161322100000000e-24
+0.000000000000000e+00
+5.806610500000000e-25
+-3.814050500000000e-05
+-8.263616300000000e-19
+-4.029145400000000e-42
+0.000000000000000e+00
+0.000000000000000e+00
+-4.619694800000000e-09
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.660675400000000e-08
+-2.660675400000000e-08
+0.000000000000000e+00
+1.439188700000000e-08
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+3.044086900000000e-14
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.413987300000000e-09
+1.549375300000000e-03
+-4.209549000000000e-17
+-1.687760500000000e-25
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-4.103280300000000e-10
+1.514935500000000e-09
+-2.735520200000000e-11
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.527620700000000e-08
+0.000000000000000e+00
+-9.448486699999999e-09
+-9.214756600000000e-03
+2.700834300000000e-16
+8.111911600000001e-26
+0.000000000000000e+00
+0.000000000000000e+00
+8.083770299999999e-08
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+8.641188600000001e-15
+8.641188600000001e-15
+0.000000000000000e+00
+-2.822623200000000e-15
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.638469600000000e-36
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+9.903941000000000e-18
+1.584630600000000e-09
+5.026250100000000e-24
+1.351888000000000e-32
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-2.684468600000000e-32
+-2.971182300000000e-16
+-1.677792900000000e-33
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+-1.718059900000000e-30
+0.000000000000000e+00
+-8.590299499999999e-31
+9.000206400000000e-10
+3.300488400000000e-25
+5.960717700000000e-48
+0.000000000000000e+00
+0.000000000000000e+00
+2.290286400000000e-14
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-06
+1.000000000000000e-06
+1.000000000000000e-06
+1.000000000000000e-06
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e-06
+2.100000000000000e+01
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+0.000000000000000e+00
+1.000000000000000e+00
+1.000000000000000e-01
+1.000000000000000e+00
+nan
+nan
+0
+2
+1
+3
+0
+0
+0
+0
+49
+12
+0
+0
+0
+0
+0
+1
+3
+0
+2
+1
+1
+0
+0
+2147483647
+0
+0
+-1
+1
+0
+1
+0
+0
+) PROP(
+"parent model" "MN1.nshort"
+)
+END
