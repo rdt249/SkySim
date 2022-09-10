@@ -1,0 +1,26 @@
+// Generated for: spectre
+// Generated on: Aug 26 18:00:30 2022
+// Design library name: MAINLIB_TESTING
+// Design cell name: SL_inv_1x
+// Design view name: schematic
+simulator lang=spectre
+global 0
+include "design_wrapper.lib" section=tt_fet
+include "design_wrapper.lib" section=tt_rc
+include "design_wrapper.lib" section=tt_parRC
+include "design_wrapper.lib" section=tt_cell
+include "design_wrapper.lib" section=models
+
+// Library name: MAINLIB_TESTING
+// Cell name: SL_inv_1x
+// View name: schematic
+MP0 (out in vdd vdd) pshort l=0.1 w=0.734 ad=0.14313 as=0.14313 pd=1.858         ps=1.858 nrs=0 nrd=0 m=1 mult=1
+MN0 (out in vss vss) nshort l=0.1 w=0.28 ad=0.0546 as=0.0546 pd=0.95         ps=0.95 nrs=0 nrd=0 m=1 mult=1
+simulatorOptions options psfversion="1.1.0" reltol=1e-3 vabstol=1e-6     iabstol=1e-12 temp=27 tnom=27 gmin=1e-12 rforce=1 maxnotes=5     maxwarns=5 digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output"     checklimitdest=psf 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+saveOptions options save=allpub

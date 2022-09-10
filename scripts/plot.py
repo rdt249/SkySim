@@ -24,8 +24,6 @@ def plot(cell_name,test_name):
     return fig
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1: CELL_NAME = sys.argv[1] # get command-line argument
-    else: CELL_NAME = str(input('CELL_NAME: ')) # alternate: get user input
-    CELL_NAME = sys.argv[1] if len(sys.argv) > 1 else str(input('CELL_NAME: '))
-    TEST_NAME = sys.argv[2] if len(sys.argv) > 2 else str(input('TEST_NAME: '))
+    CELL_NAME = sys.argv[1] if len(sys.argv) > 1 else input('CELL_NAME: ')
+    TEST_NAME = sys.argv[2] if len(sys.argv) > 2 else input('TEST_NAME: ')
     plot(CELL_NAME,TEST_NAME).show() # plot simulation data

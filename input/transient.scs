@@ -1,0 +1,6 @@
+// SkySim heavy ion transient injection model
+// based on Kauppila et. al. 2009
+ISRC (skynet0 skynet1) isource pulse
+CS (skynet1 skynet0) capacitor c=0.1u
+GREC (skynet1 skynet0) isource
+GSEE (skynet1 skynet0 skynet1 skynet0) gm=1 m=2
