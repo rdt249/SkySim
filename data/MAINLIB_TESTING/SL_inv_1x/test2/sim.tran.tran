@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "19.1.0.237.isr3"
-"date" "11:33:33 PM, Fri Sep 9, 2022"
+"date" "1:43:13 AM, Sat Sep 10, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "tran"
 "analysis name" "sim"

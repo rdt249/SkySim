@@ -1,11 +1,10 @@
 # Stephen Lawrence 2022
 
-import sys,os,shutil
+import sys,os
 import itertools
 
 LIB_NAME = 'MAINLIB_TESTING' # dev use only -- replaced by command line argument
 CELL_NAME = 'SL_inv_1x' # dev use only -- replaced by command line argument
-#TEST_NAME = 'test1' # test use only -- replaced by command line argument
 
 # refer to models directory: /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/
 # names of models and pin numbers to connect current source
@@ -20,7 +19,7 @@ VSS_ALIAS = ['vss']
 INPUT_ALIAS = ['in','in0','in1']
 # todo: add analog inputs and clocks
 
-# universal voltage levels
+# global voltage levels
 VDD = 1.2
 VSS = 0
 INPUT_HIGH = 1.2
@@ -78,7 +77,20 @@ def get_stimuli(devices,nets): # generate stimuli (list of lists of strings) bas
             stimulus.append('')
             stimuli.append(stimulus)
     return stimuli
-        
+
+def format_bash(lib_name,cell_name,tests):
+    bash = [
+        'MODELS="/home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/"',
+        'source env/SW_Run/bashrc.IC'
+    ]
+    for test in tests:
+        dir = f'{lib_name}/{cell_name}/test{test}'
+        bash.append(f'spectre data/{dir}/input.scs -I/$MODELS -format psfascii -raw data/{dir}')
+        bash.append(f'cp input.log data/{dir}/input.log')
+        bash.append('rm -r input.ahdlSimDB input.log')
+        bash.append(f'python3 scripts/analyze.py {lib_name} {cell_name} test{test}')
+    return '\n'.join(bash)
+
 def write_tests(lib_name,cell_name,netlist,stimuli): # write spectre input files (netlist + stimulus)
     root = f'data/{lib_name}/{cell_name}'
     os.makedirs(root,exist_ok=True)
@@ -87,6 +99,12 @@ def write_tests(lib_name,cell_name,netlist,stimuli): # write spectre input files
         os.makedirs(root + f'/test{i}',exist_ok=True)
         file_name = root + f'/test{i}/input.scs'
         open(file_name,'w').write('\n'.join(netlist + stimuli[i]))
+        file_name = root + f'/test{i}/run.sh'
+        open(file_name,'w').write(format_bash(lib_name,cell_name,[i]))
+        os.chmod(file_name,0o775)
+    file_name = root + '/run_all.sh'
+    open(file_name,'w').write(format_bash(lib_name,cell_name,range(len(stimuli))))
+    os.chmod(file_name,0o775)
 
 def main(lib_name,cell_name):
     netlist,devices,nets = read_netlist(cell_name)

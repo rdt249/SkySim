@@ -5,19 +5,19 @@ Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwi
 
 Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
 
-User: lawrence   Host: lillywhite.utc.simcenter.edu   HostID: C70ABF00   PID: 8156
-Memory  available: 2.2664 GB  physical: 16.5765 GB
+User: lawrence   Host: lillywhite.utc.simcenter.edu   HostID: C70ABF00   PID: 25542
+Memory  available: 2.3604 GB  physical: 16.5765 GB
 Linux   : CentOS Linux release 7.9.2009 (Core)
 CPU Type: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
         Socket: Processors [Frequency] (Hyperthreaded Processor)
-        0:       0 [3639.9] (  6 ),  1 [3610.7] (  7 ),  2 [3600.0] (  8 )
-                 3 [3601.0] (  9 ),  4 [3600.6] ( 10 ),  5 [3674.7] ( 11 )
+        0:       0 [3601.0] (  6 ),  1 [3605.3] (  7 ),  2 [3604.5] (  8 )
+                 3 [3600.8] (  9 ),  4 [3601.3] ( 10 ),  5 [3721.3] ( 11 )
         
-System load averages (1min, 5min, 15min) : 9.4 %, 8.9 %, 8.8 %
+System load averages (1min, 5min, 15min) : 12.2 %, 10.7 %, 9.5 %
 Hyperthreading is enabled
 
 
-Simulating `data/MAINLIB_TESTING/SL_inv_1x/test2/input.scs' on lillywhite.utc.simcenter.edu at 11:33:33 PM, Fri Sep 9, 2022 (process id: 8156).
+Simulating `data/MAINLIB_TESTING/SL_inv_1x/test2/input.scs' on lillywhite.utc.simcenter.edu at 1:43:13 AM, Sat Sep 10, 2022 (process id: 25542).
 Current working directory: /home/lawrence/SkySim
 Command line:
     /usr/local/cadence/installs/SPECTRE191/tools/bin/spectre -64  \
@@ -75,8 +75,8 @@ Reading link:  /usr/local/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ah
 Reading file:  /home/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.vams
 Reading link:  /usr/local/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/discipline.h
 Reading file:  /home/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/disciplines.vams
-Time for NDB Parsing: CPU = 220.882 ms, elapsed = 255.81 ms.
-Time accumulated: CPU = 249.517 ms, elapsed = 255.813 ms.
+Time for NDB Parsing: CPU = 218.483 ms, elapsed = 252.586 ms.
+Time accumulated: CPU = 246.728 ms, elapsed = 252.589 ms.
 Peak resident memory used = 72.8 Mbytes.
 
 
@@ -84,8 +84,8 @@ Warning from spectre during hierarchy flattening.
     WARNING (SFE-101): "//home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models//./nshort.pm3" 2866: MN0.nshort.14: `scalm' is not a valid parameter for an instance of `bsim3v3'.  Ignored.
     WARNING (SFE-101): "//home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models//./pshort.pm3" 1067: MP0.pshort.5: `scalm' is not a valid parameter for an instance of `bsim3v3'.  Ignored.
 
-Time for Elaboration: CPU = 27.16 ms, elapsed = 27.1661 ms.
-Time accumulated: CPU = 276.83 ms, elapsed = 283.131 ms.
+Time for Elaboration: CPU = 27.521 ms, elapsed = 27.5261 ms.
+Time accumulated: CPU = 274.394 ms, elapsed = 280.259 ms.
 Peak resident memory used = 84.4 Mbytes.
 
 
@@ -93,8 +93,8 @@ Warning from spectre during hierarchy flattening.
     WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
 
 
-Time for EDB Visiting: CPU = 707 us, elapsed = 706.911 us.
-Time accumulated: CPU = 277.677 ms, elapsed = 283.976 ms.
+Time for EDB Visiting: CPU = 701 us, elapsed = 700.951 us.
+Time accumulated: CPU = 275.233 ms, elapsed = 281.097 ms.
 Peak resident memory used = 85 Mbytes.
 
 
@@ -144,8 +144,8 @@ Warning from spectre during initial setup.
     WARNING (CMI-2430): MN0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
     WARNING (CMI-2430): MP0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
 
-Time for parsing: CPU = 3.861 ms, elapsed = 54.528 ms.
-Time accumulated: CPU = 281.639 ms, elapsed = 338.605 ms.
+Time for parsing: CPU = 4.37 ms, elapsed = 68.5451 ms.
+Time accumulated: CPU = 279.697 ms, elapsed = 349.736 ms.
 Peak resident memory used = 87.4 Mbytes.
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -174,7 +174,7 @@ Opening the PSFASCII file data/MAINLIB_TESTING/SL_inv_1x/test2/subckts.info.subc
 ************************************************
 Transient Analysis `sim': time = (0 s -> 100 ps)
 ************************************************
-DC simulation time: CPU = 278 us, elapsed = 277.996 us.
+DC simulation time: CPU = 336 us, elapsed = 336.885 us.
 
 Opening the PSFASCII file data/MAINLIB_TESTING/SL_inv_1x/test2/sim.tran.tran ...
 Important parameter values:
@@ -252,24 +252,24 @@ Post-Transient Simulation Summary
 
 
 During simulation, the CPU load for active processors is :
-        Spectre  0 (1.6 %)       1 (7.8 %)       2 (3.1 %)       3 (6.0 %)
-                 4 (10.8 %)      5 (3.1 %)       6 (3.0 %)       9 (3.1 %)
-                10 (15.6 %)     11 (3.1 %)      
+        Spectre  0 (3.4 %)       1 (5.9 %)       2 (4.7 %)       3 (1.2 %)
+                 4 (11.8 %)      5 (6.9 %)       7 (1.2 %)       8 (3.5 %)
+                 9 (1.2 %)      10 (10.6 %)     
         Other   
-Initial condition solution time: CPU = 333 us, elapsed = 336.17 us.
-Intrinsic tran analysis time:    CPU = 5.66 ms, elapsed = 20.6339 ms.
-Total time required for tran analysis `sim': CPU = 6.967 ms, elapsed = 21.9381 ms.
-Time accumulated: CPU = 353.223 ms, elapsed = 707.911 ms.
-Peak resident memory used = 100 Mbytes.
+Initial condition solution time: CPU = 401 us, elapsed = 402.927 us.
+Intrinsic tran analysis time:    CPU = 6.216 ms, elapsed = 37.8289 ms.
+Total time required for tran analysis `sim': CPU = 7.492 ms, elapsed = 39.1009 ms.
+Time accumulated: CPU = 361.045 ms, elapsed = 917.428 ms.
+Peak resident memory used = 101 Mbytes.
 
 
 Notice from spectre.
     31 notices suppressed.
 
 
-Aggregate audit (11:33:34 PM, Fri Sep 9, 2022):
-Time used: CPU = 365 ms, elapsed = 741 ms, util. = 49.2%.
-Time spent in licensing: elapsed = 75.6 ms, percentage of total = 10.2%.
+Aggregate audit (1:43:14 AM, Sat Sep 10, 2022):
+Time used: CPU = 374 ms, elapsed = 959 ms, util. = 39%.
+Time spent in licensing: elapsed = 73.9 ms, percentage of total = 7.71%.
 Peak memory used = 101 Mbytes.
-Simulation started at: 11:33:33 PM, Fri Sep 9, 2022, ended at: 11:33:34 PM, Fri Sep 9, 2022, with elapsed time (wall clock): 741 ms.
+Simulation started at: 1:43:13 AM, Sat Sep 10, 2022, ended at: 1:43:14 AM, Sat Sep 10, 2022, with elapsed time (wall clock): 959 ms.
 spectre completes with 0 errors, 7 warnings, and 8 notices.

@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "19.1.0.237.isr3"
-"date" "11:32:51 PM, Fri Sep 9, 2022"
+"date" "1:43:09 AM, Sat Sep 10, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info"
 "analysis name" "outputParameter"
@@ -110,12 +110,12 @@ VALUE
 ) PROP(
 "model" "vsource"
 )
-"V0" "vsource~instparams" (
+"VSS" "vsource~instparams" (
 2.700000000000000e+01
 ) PROP(
 "model" "vsource"
 )
-"VSS" "vsource~instparams" (
+"V0" "vsource~instparams" (
 2.700000000000000e+01
 ) PROP(
 "model" "vsource"

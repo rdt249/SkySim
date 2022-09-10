@@ -2,7 +2,7 @@ HEADER
 "PSFversion" "1.00"
 "simulator" "spectre"
 "version" "19.1.0.237.isr3"
-"date" "11:33:33 PM, Fri Sep 9, 2022"
+"date" "1:43:13 AM, Sat Sep 10, 2022"
 "design" "// Generated for: spectre"
 "analysis type" "info"
 "analysis name" "element"
@@ -1039,8 +1039,8 @@ nan
 ) PROP(
 "model" "vsource"
 )
-"V0" "vsource~instparams" (
-1.200000000000000e+00
+"VSS" "vsource~instparams" (
+0.000000000000000e+00
 0.000000000000000e+00
 0.000000000000000e+00
 1.000000000000000e+00
@@ -1112,8 +1112,8 @@ nan
 ) PROP(
 "model" "vsource"
 )
-"VSS" "vsource~instparams" (
-0.000000000000000e+00
+"V0" "vsource~instparams" (
+1.200000000000000e+00
 0.000000000000000e+00
 0.000000000000000e+00
 1.000000000000000e+00

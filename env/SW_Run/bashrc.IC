@@ -1,0 +1,77 @@
+# Cadence Specifics
+export UNAME=/bin/uname
+export HOME=/home/$USER
+export BASE_DIR=/usr/local/cadence/installs
+export RUN_DIR=$HOME/SW_Run
+#export CDS=$BASE_DIR/IC618 ###### <-- this breaks python!
+export CDSHOME=$CDS
+export CDS_INSTALL_DIR=$CDS/tools/dfII
+export SW_PDK_ROOT=/usr/local/PDKs/Skywater
+export PDK_HOME=$SW_PDK_ROOT/c9pdk
+export IO_HOME=$SW_PDK_ROOT/c9hio/c9hio
+export SW_IP_HOME=$SW_PDK_ROOT/scc9gena
+export METAL_STACK="c9fh-3r"
+export PATH=$CDS/tools/dfII/bin:$CDS/tools/bin:$CDS/share/bin:$CDS/tools/dracula/bin:$PATH
+export CDS_LIC_FILE=5280@tech06.cecs.utc.edu
+export LM_LICENSE_FILE=5280@tech06.cecs.utc.edu
+export CDS_Netlisting_Mode=Analog
+export OA_UNSUPPORTED_PLAT=TRUE
+export LD_LIBRARY_PATH=$CDS/tools/lib:$CDS/tools/lib/64bit:$LD_LIBRARY_PATH
+export IUSDIR=$CDS
+export PDK_MODEL_HOME=$PDK_HOME
+export DEVICELIB_ROOT=$PDK_HOME/VirtuosoOA/libs
+export TECHDIR=$PDK_HOME
+export TECHDIR_DRC=$PDK_HOME/DRC/Calibre
+export TECHDIR_LVS=$PDK_HOME/LVS/Calibre
+
+# MMSIM Specifics
+export SPECTRE=$BASE_DIR/SPECTRE191
+export PATH=$SPECTRE/tools/dfII/bin:$SPECTRE/tools/bin:$SPECTRE/bin:$SPECTRE/share/bin:$PATH
+export CDS_AUTO_64BIT=ALL
+export CDS_AHDLCMI_ENABLE=YES
+export CDS_QUIET=0
+
+# Calibre Specifics
+export CALIBRE_HOME=/usr/local/mentor/aoi_cal_2020.3_38.22
+export MGC_HOME=$CALIBRE_HOME
+export TECHDIR=$PDK_HOME
+export MGLS_LICENSE_FILE=1717@tech05.cecs.utc.edu
+export LM_LICENSE_FILE=1717@tech05.cecs.utc.edu:$LM_LICENSE_FILE
+export MGC_CALIBRE_DRC_RUNSET_FILE=$TECHDIR/DRC/Calibre/c9f_5lm_drc_runset
+export MGLS_DEBUG_LOG_DIR=$HOME/tmp
+#export MGC_CALIBRE_LVS_RUNSET_FILE=$RUN_DIR/32S0I_LVS/cmos32soi_lvs.runset
+#export MGC_CALIBRE_PEX_RUNSET_FILE=$RUN_DIR/32S0I_PEX/cmos32soi_pex.runset
+export PATH=$PATH:$MGC_HOME/bin/
+export TCL_LIBRARY=$MGC_HOME/pkgs/icv_comp.aoi/8.6/lib/tcl
+export TK_LIBRARY=$MGC_HOME/pkgs/icv_comp.aoi/8.6/lib/tk
+#export LD_LIBRARY_PATH=$IC/tools/lib:$LD_LIBRARY_PATH
+export LAYOUT_SYSTEM=GDSII
+#export BEOL_STACK=5L1x_3L2x_1L4x_2T16x_LB
+#export DESIGN_TYPE=CHIP
+#export CUSTOMER=ASICS
+#export IOTYPE=INLINE
+#export ORIENTATION=VERTICAL
+#export IMAGE_TYPE=WB
+#export DO_PREDICTIVE_DENSITY=YES
+#export DO_NWSTRESS=YES
+#export DO_OPTPS=NO
+#export DO_131=YES
+#export RECOMMENDED_RULES=NO
+#export DENSITY_DIR="$RUN_DIR/32S0I_DRC/density.reports"
+#export DENSITY_RESULTS="$RUN_DIR/32SOI_DRC/density.results"
+#export ANTENNA_DIR="$RUN_DIR/32S0I_DRC/antenna.reports"
+#export ANTENNA_RESULTS="$RUN_DIR/32SOI_DRC/antenna.results"
+#export BATCH=NO
+#export DRC_RESULTS_DATABASE="$HOME/CMOS32SOI_Setup/32SOI_DRC/drc_results.ascii"
+#export DRC_SUMMARY_REPORT="$HOME/CMOS32SOI_Setup/drc_summary"
+#export CHECK_SUB_CONNECTIONS=FALSE
+#export PEX_RUN=TRUE
+#export LAYOUT_SYSTEM=GDSII
+#export LVS_PUSH_DEVICES=FALSE
+#export REDUCE_SPLIT_GATES=TRUE
+#export SHORT_EQUIV_NODES=FALSE
+#export STRESSFILE="$HOME/CMOS32SOI_Setup/stress.results"
+
+unset BASE_DIR UNAME
+export DD_DONT_DO_OS_LOCKS=set
+#
