@@ -1,0 +1,5 @@
+test,target,inputs
+0,MP0 ,in:0
+1,MN0 ,in:0
+2,MP0 ,in:1
+3,MN0 ,in:1

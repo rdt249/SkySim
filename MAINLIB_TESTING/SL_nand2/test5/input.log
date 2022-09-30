@@ -1,0 +1,275 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.237.isr3 64bit -- 3 Jan 2020
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: lawrence   Host: lillywhite.utc.simcenter.edu   HostID: C70ABF00   PID: 13269
+Memory  available: 1.4831 GB  physical: 16.5765 GB
+Linux   : CentOS Linux release 7.9.2009 (Core)
+CPU Type: Intel(R) Xeon(R) CPU E5-1650 v3 @ 3.50GHz
+        Socket: Processors [Frequency] (Hyperthreaded Processor)
+        0:       0 [3600.8] (  6 ),  1 [3623.0] (  7 ),  2 [3628.0] (  8 )
+                 3 [3635.0] (  9 ),  4 [3603.4] ( 10 ),  5 [3644.6] ( 11 )
+        
+System load averages (1min, 5min, 15min) : 15.2 %, 11.0 %, 10.7 %
+Hyperthreading is enabled
+
+
+Simulating `MAINLIB_TESTING/SL_nand2/test5/input.scs' on lillywhite.utc.simcenter.edu at 1:51:08 PM, Sat Sep 10, 2022 (process id: 13269).
+Current working directory: /home/lawrence/SkySim
+Command line:
+    /usr/local/cadence/installs/SPECTRE191/tools/bin/spectre -64  \
+        MAINLIB_TESTING/SL_nand2/test5/input.scs  \
+        -I//home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/  \
+        -format psfascii -raw MAINLIB_TESTING/SL_nand2/test5
+
+Loading /usr/local/cadence/installs/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/local/cadence/installs/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/local/cadence/installs/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/local/cadence/installs/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/local/cadence/installs/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/lawrence/SkySim/MAINLIB_TESTING/SL_nand2/test5/input.scs
+Reading link:  /usr/local/cadence
+Reading file:  /home/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/design_wrapper.lib
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tt.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tn_base.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tp_base.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/trtclin.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/mm.inc
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/trtc.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tpar.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/r+c.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/ttcell.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tncell.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/tpcell.cor
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/models.all
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/model.hed
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/n.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/p.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/lvnnative.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/nshort.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pshort.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/nthick.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/nthickbc.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pthick.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pthickbc.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/nshort_l.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pshort_l.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/linear.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/npass.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/npd.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/ppu.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/ntcam.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pnp.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/non_esd_pnp_subcircuit.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/non_esd_diode_subcircuit.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/nthick_loc.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/pthick_loc.pm3
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/xcmimc.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/xcmimc_hd.mod
+Reading file:  /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/cap_parabolic.va
+Reading link:  /usr/local/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.vams
+Reading link:  /usr/local/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/cadence/installs/SPECTRE191/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Time for NDB Parsing: CPU = 215.394 ms, elapsed = 249.519 ms.
+Time accumulated: CPU = 243.457 ms, elapsed = 249.522 ms.
+Peak resident memory used = 72.8 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SFE-101): "//home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models//./nshort.pm3" 1466: MN1.nshort.7: `scalm' is not a valid parameter for an instance of `bsim3v3'.  Ignored.
+    WARNING (SFE-101): "//home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models//./pshort.pm3" 1467: MP1.pshort.7: `scalm' is not a valid parameter for an instance of `bsim3v3'.  Ignored.
+
+Time for Elaboration: CPU = 26.872 ms, elapsed = 26.8779 ms.
+Time accumulated: CPU = 270.466 ms, elapsed = 276.536 ms.
+Peak resident memory used = 84.4 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 722 us, elapsed = 721.931 us.
+Time accumulated: CPU = 271.322 ms, elapsed = 277.392 ms.
+Peak resident memory used = 85.1 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2430): MP0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
+    WARNING (CMI-2430): MN0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
+
+
+Global user options:
+         psfversion = 1.1.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+               gmin = 1e-12
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+              scale = 1e-06
+             reltol = 0.001
+               tnom = 27
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 6
+            bsim3v3 4     
+            isource 1     
+            vsource 4     
+
+Analysis and control statement inventory:
+               info 6     
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+
+Warning from spectre during initial setup.
+    WARNING (CMI-2430): MP0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
+    WARNING (CMI-2430): MN0: `Ngate' = 1e+30 is larger than 1.0e23. Ngate * 1.0e-6 is used. 
+
+Time for parsing: CPU = 4.707 ms, elapsed = 75.8622 ms.
+Time accumulated: CPU = 276.126 ms, elapsed = 353.351 ms.
+Peak resident memory used = 87.4 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/subckts.info.subckts ...
+
+************************************************
+Transient Analysis `sim': time = (0 s -> 100 ps)
+************************************************
+DC simulation time: CPU = 355 us, elapsed = 355.959 us.
+
+Opening the PSFASCII file MAINLIB_TESTING/SL_nand2/test5/sim.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 100 ps
+    step = 100 fs
+    maxstep = 2 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   6       (voltage)
+
+...
+
+Notice from spectre at time = 5.00747 ps during transient analysis `sim'.
+    Found trapezoidal ringing on node V1:p.
+
+....
+
+Notice from spectre at time = 6 ps during transient analysis `sim'.
+    Found trapezoidal ringing on node V1:p.
+
+......9......8......7......6......5..
+
+Notice from spectre at time = 54.6976 ps during transient analysis `sim'.
+    Found trapezoidal ringing on node VDD:p.
+
+......9......8......7......6......5...
+
+Notice from spectre at time = 56.6976 ps during transient analysis `sim'.
+    Found trapezoidal ringing on node VDD:p.
+
+......9......8......7......6......5.....
+
+Notice from spectre at time = 58.6976 ps during transient analysis `sim'.
+    Found trapezoidal ringing on node VDD:p.
+        Further occurrences of this notice will be suppressed.
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             66
+
+Notice from spectre during transient analysis `sim'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(net13) = 1.864 V
+I: I(VDD:p) = 61.46 uA
+If your circuit contains signals of the same quantity that are vastly different in size (such as high voltage circuitry combined with low voltage control circuitry), you should consider specifying global option `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  1 (10.8 %)      2 (4.7 %)       3 (1.2 %)       4 (4.8 %)
+                 5 (2.4 %)       6 (1.2 %)       7 (3.6 %)       8 (2.4 %)
+                10 (13.3 %)     
+        Other   
+Initial condition solution time: CPU = 412 us, elapsed = 425.816 us.
+Intrinsic tran analysis time:    CPU = 6.463 ms, elapsed = 38.3139 ms.
+Total time required for tran analysis `sim': CPU = 7.649 ms, elapsed = 39.4979 ms.
+Time accumulated: CPU = 352.656 ms, elapsed = 903.968 ms.
+Peak resident memory used = 101 Mbytes.
+
+
+Notice from spectre.
+    21 notices suppressed.
+
+
+Aggregate audit (1:51:09 PM, Sat Sep 10, 2022):
+Time used: CPU = 364 ms, elapsed = 946 ms, util. = 38.5%.
+Time spent in licensing: elapsed = 72.7 ms, percentage of total = 7.69%.
+Peak memory used = 101 Mbytes.
+Simulation started at: 1:51:08 PM, Sat Sep 10, 2022, ended at: 1:51:09 PM, Sat Sep 10, 2022, with elapsed time (wall clock): 946 ms.
+spectre completes with 0 errors, 7 warnings, and 8 notices.
