@@ -19,7 +19,7 @@ First things first, we need a netlist for the cell you want to simulate. Normall
 
 The exported netlist should now be located in your home directory under `~/simulation/{CELL_NAME}/spectre/schematic/netlist/input.scs`. You can check to make sure it's there, because we will need it for the next step.
 
-Next, we'll use a Python script to generate Spectre simulation files. Many test cases are generated automatically. Right now, the number of test cases generated will be the number of input conditions times the number of target devices. For the inverter example, there are two input conditions (input = high and low) and two target devices (NMOS and PMOS) resulting in four test cases. Make sure you navigate to the SkySim directory `cd SkySim` and use the following example to generate simulation files for the `MAINLIB_TESTING/SL_inv_1x` inverter.
+Next, we'll use a Python script to generate Spectre simulation files. Many test cases are generated automatically. Right now, the number of test cases generated will be the number of input conditions times the number of target devices. For the inverter example, there are two input conditions (input = high and low) and two target devices (one NMOS and one PMOS) resulting in four test cases. Make sure you navigate to the SkySim directory `cd SkySim` and use the following example to generate simulation files for the `MAINLIB_TESTING/SL_inv_1x` inverter.
 
 ```python3 scripts/generate.py MAINLIB_TESTING/SL_inv_1x```
 
@@ -27,9 +27,9 @@ There should be a new folder located at `SkySim/MAINLIB_TESTING/SL_inv_1x` which
 
 ```MAINLIB_TESTING/SL_inv_1x/run_all.sh```
 
-That's it! The results from the simulations should be found in `SkySim/MAINLIB_TESTING/SL_inv_1x/testX`, where `X` is the test number (0 through 3 in this case). The transient simulation has been conveniently interpreted as a CSV named `transient.csv` for each test case. If you want to view the plotted data from this file, we have a Python script just for that. The follow example plots the results of test0.
+That's it! The results from the simulations should be found in `SkySim/MAINLIB_TESTING/SL_inv_1x/testX`, where `X` is the test number (0 through 3 in this case). The transient simulation has been conveniently interpreted as a CSV named `transient.csv` for each test case. If you want to view the plotted data from this file, we have a Python script just for that. The example below plots the results of test1.
 
-```python3 scripts/plot.py MAINLIB_TESTING/SL_inv_1x/test0```
+```python3 scripts/plot.py MAINLIB_TESTING/SL_inv_1x/test1```
 
 ## Next steps
 
@@ -37,8 +37,6 @@ These are a few features I think we should try to add soon. This list isn't exha
 
 1. _Export cell netlists from command line._ If we could run SKILL code from the command line without opening Virtuoso, it would save a lot of time and make things a lot easier for the user. However, I've run into issues with doing this over an SSH connection because of the way Virtuoso is built. An alternative approach is to try to read the supposedly free "Open Access" format that Virtuoso uses to store its netlists, and convert them to Spectre or Spice ourselves.
 
-2. _Tunable radiation fault injection circuit._ We need to work on our fault injection circuit. There's lots of literature on how to do this with Spice components (see `cite/kauppila2009.pdf`). We could build and test a fault injector subcircuit in Virtuoso, save that netlist somewhere in this repo, and just copy and edit the file as we add it to simulation test cases. Ideally, we want the ability to choose an Linear Energy Transfer (LET) and/or total charge deposition (Qt). This would enable heavy ion simulations.
+2. _Tunable radiation fault injection circuit._ We need to work on our fault injection circuit. There's lots of literature on how to do this with Spice components (see `cite/kauppila2009.pdf`). We could build and test a fault injector subcircuit in Virtuoso, save that netlist in the `circuits` folder, and just copy and edit the file as we add it to simulation test cases. Ideally, we want the ability to choose a Linear Energy Transfer (LET) and/or total charge deposition (Qt). This would enable direct ionizations simulations.
 
 3. _Tunable laser fault injection circuit._ Similar to the radiation fault injector, but designed for lasers. This might require input from someone with some laser testing experience, and a deep dive into the literature.
-
-4. _Other types of fault injection._ There's a lot of interest in simulating RTS noise in this technology. It would be cool to adapt this project for RTS noise simulation. It might be complicated to figure out where and how we'd want to inject the noise.

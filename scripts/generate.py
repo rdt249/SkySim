@@ -5,6 +5,7 @@ import itertools
 import pandas as pd
 
 CELL_PATH = 'MAINLIB_TESTING/SL_inv_1x' # dev use only -- replaced by command line argument
+INJECTOR = 'circuits/simple_injector.scs' # dev use only -- replaced by command line argument
 
 # refer to models directory: /home/PDKs/Skywater/V1.10.500/MODELS/SPECTRE/c9fh-3r/Models/
 # names of models, along with the pins where we should connect a fault injector to simulate radiation
@@ -35,7 +36,7 @@ def read_netlist(cell_path): # read the netlist file, find devices and nets
     for i,line in enumerate(netlist): # for every line in the netlist file
         if line.startswith('//'): continue # skip comments
         if len(line.split('(')) > 1: # this line is a device
-            name = line.split('(')[0] # get device identifier
+            name = line.split(' (')[0] # get device identifier
             pins = line.split('(')[1].split(')')[0].split(' ') # get device pins
             nets += pins # add pins to netlist
             model = line.split(')')[1].split()[0] # get device model name
@@ -49,7 +50,7 @@ def read_netlist(cell_path): # read the netlist file, find devices and nets
     nets = list(set(nets)) # save unique nets
     return netlist,devices,list(set(nets))
 
-def get_stimuli(devices,nets): # generate stimuli (list of lists of strings) based on devices and nets
+def get_stimuli(cell_path,devices,nets,injector): # generate stimuli (list of lists of strings) based on devices and nets
     targets = []
     for device in devices: # for each device in device list
         if device['target']: targets.append(device) # if device is a simulation target
@@ -66,7 +67,9 @@ def get_stimuli(devices,nets): # generate stimuli (list of lists of strings) bas
             stimulus.append(f'// target device: {target["name"]}') # add comment
             conditions = ' '.join([f'{n}:{int(b)}' for n,b in zip(inputs,bias)])
             stimulus.append(f'// input conditions: {conditions}') # add comment
-            meta.append({'test':test,'target':target['name'],'inputs':conditions}) # run meta data
+            nodes = [target['pins'][n] for n in MODELS[target['model']]] # find fault injector nodes
+            circuit = open(injector).read().replace('<node0>',nodes[0]).replace('<node1>',nodes[1])
+            for line in circuit.split(','): stimulus.append(line)
             i = 0 # start input net counter at 0
             for net in nets: # for each net
                 if net in VDD_ALIAS: stimulus.append(f'VDD ({net} 0) vsource dc={VDD}') # add VDD stimulus
@@ -75,14 +78,16 @@ def get_stimuli(devices,nets): # generate stimuli (list of lists of strings) bas
                     if bias[i]: stimulus.append(f'V{i} ({net} 0) vsource dc={INPUT_HIGH}') # bias high
                     else: stimulus.append(f'V{i} ({net} 0) vsource dc={INPUT_LOW}') # bias low
                     i += 1 # incremenet input net counter
-            nodes = [target['pins'][n] for n in MODELS[target['model']]] # find fault injector nodes
-            settings = 'type=pulse val0=0 val1=200u period=100n width=5p rise=1p fall=5p' # fault injector setting
-            stimulus.append(f'STRIKE ({nodes[0]} {nodes[1]}) isource ' + settings) # add fault injector stimulus
-            #stimulus.append(f'CAP ({nodes[0]} {nodes[1]}) capacitor c=0.1n') # add capacitor
-            #stimulus.append(f'DIODE ({nodes[1]} {nodes[0]}) pdiode area=6') # add diode
-            stimulus.append('sim tran stop=100p') # define simulation type
+            stimulus.append('sim tran stop=1n') # define simulation type
             stimulus.append('') # empty line
             stimuli.append(stimulus) # add stimulus to list of stimuli
+            meta.append({
+                'test':test,
+                'folder':f'{cell_path}/test{test}',
+                'target':target['name'],
+                'inputs':conditions,
+                'injector':injector
+            }) # meta data
             test += 1
     return stimuli,pd.DataFrame(meta).set_index('test')
 
@@ -110,14 +115,20 @@ def write_tests(cell_path,netlist,stimuli): # write spectre input files (netlist
     open(cell_path + '/run_all.sh','w').write(format_bash(cell_path,range(len(stimuli)))) # write bash run_all file
     os.chmod(cell_path + '/run_all.sh',0o775) # give bash file permissions
 
-def generate(cell_path): # generate tests for virtuoso cell
+def generate(cell_path,injector): # generate tests for virtuoso cell
     # to do: generate virtuoso netlist from command line (instead of CIW)
+    os.makedirs(cell_path) # create project directory
     netlist,devices,nets = read_netlist(cell_path) # read cell netlist
-    stimuli,meta = get_stimuli(devices,nets) # get stimulus files for test cases
+    stimuli,meta = get_stimuli(cell_path,devices,nets,injector) # get stimulus files for test cases
     meta.to_csv(f'{cell_path}/meta.csv') # save test case meta data
     write_tests(cell_path,netlist,stimuli) # write simulation files
-    print(f'\033[94mcommand to run all tests: \033[96m{cell_path}/run_all.sh\033[0m') # print run command
+    print('\033[94m')
+    print(meta)
+    print(f'\nauto-generated {len(meta)} test cases (see above)')
+    print(f'run all: {cell_path}/run_all.sh') # print run_all command
+    print('\033[0m')
 
 if __name__ == '__main__':
     if len(sys.argv) > 1: CELL_PATH = sys.argv[1]
-    generate(CELL_PATH)
+    if len(sys.argv) > 2: INJECTOR = sys.argv[2]
+    generate(CELL_PATH,INJECTOR)
