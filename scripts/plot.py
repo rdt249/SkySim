@@ -2,17 +2,26 @@
 
 import sys, os
 import pandas as pd
-pd.options.plotting.backend = "plotly"
+import plotly.express as px
 
-TEST_PATH = 'MAINLIB_TESTING/SL_inv_1x/test0'
+CELL_PATH = 'MAINLIB_TESTING/SL_inv_1x'
 
-def plot(test_path): # plot spectre transient simulation results
-    df = pd.read_csv(test_path + '/transient.csv',index_col='time') # get transient CSV file
-    fig = df.plot(title=test_path + '/transient.csv') # draw a figure for the data
+def get_facet(file,tag):
+    df = pd.read_csv(file,index_col=0)
+    df = df.stack().reset_index().set_index(df.index.name).rename(columns={'level_1':'node',0:'value'})
+    df['test'] = tag
+    return df
+
+def plot(cell_path): # plot spectre transient simulation results
+    meta = pd.read_csv(cell_path + '/meta.csv',index_col=0)
+    df = pd.DataFrame()
+    for test in meta['folder']:
+        df = pd.concat([df,get_facet(test + '/transient.csv',test.split('/')[-1])])
+    fig = px.line(df,color='node',animation_frame='test',title=cell_path)
     # fig.write_html(wave_path + '/transient.html') # create HTML (really big file!)
     # fig.write_image(test_path + '/transient.png',scale=3) # create PNG
     return fig
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1: TEST_PATH = sys.argv[1]
-    plot(TEST_PATH).show()
+    if len(sys.argv) > 1: CELL_PATH = sys.argv[1]
+    plot(CELL_PATH).show()

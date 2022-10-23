@@ -1,1 +1,2 @@
-STRIKE (<node0> <node1>) isource type=exp val0=0 val1=200u td1=0p tau1=1f td2=10p tau2=100
+STRIKE (<node0> inter) isource type=exp val0=0 val1=200u td1=0p tau1=1f td2=10p tau2=100p // Qt = 110 pC
+PROBE (inter <node1>) iprobe

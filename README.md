@@ -27,9 +27,9 @@ There should be a new folder located at `SkySim/MAINLIB_TESTING/SL_inv_1x` which
 
 ```MAINLIB_TESTING/SL_inv_1x/run_all.sh```
 
-That's it! The results from the simulations should be found in `SkySim/MAINLIB_TESTING/SL_inv_1x/testX`, where `X` is the test number (0 through 3 in this case). The transient simulation has been conveniently interpreted as a CSV named `transient.csv` for each test case. If you want to view the plotted data from this file, we have a Python script just for that. The example below plots the results of test1.
+That's it! The results from the simulations should be found in `SkySim/MAINLIB_TESTING/SL_inv_1x/testX`, where `X` is the test number (0 through 3 in this case). The transient simulation has been conveniently interpreted as a CSV named `transient.csv` for each test case. If you want to view the plotted data from this file, we have a Python script just for that.
 
-```python3 scripts/plot.py MAINLIB_TESTING/SL_inv_1x/test1```
+```python3 scripts/plot.py MAINLIB_TESTING/SL_inv_1x```
 
 ## Next steps
 
